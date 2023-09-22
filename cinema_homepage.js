@@ -1,20 +1,18 @@
 
 // ===========지도 api의 javaScript==================================================
 
-// 마커를 담을 배열입니다
 var markers = [];
 
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = {
         center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
-        level: 4 // 지도의 확대 레벨
+        level: 3 // 지도의 확대 레벨
     };  
 
 // 지도를 생성합니다    
 var map = new kakao.maps.Map(mapContainer, mapOption); 
 
 // 장소 검색 객체를 생성합니다
-
 var ps = new kakao.maps.services.Places();  
 
 // 검색 결과 목록이나 마커를 클릭했을 때 장소명을 표출할 인포윈도우를 생성합니다
@@ -29,7 +27,7 @@ function searchPlaces() {
     var keyword = document.getElementById('keyword').value;
 
     if (!keyword.replace(/^\s+|\s+$/g, '')) {
-        
+        alert('키워드를 입력해주세요!');
         return false;
     }
 
@@ -76,16 +74,6 @@ function displayPlaces(places) {
     // 지도에 표시되고 있는 마커를 제거합니다
     removeMarker();
     
-
-    places.sort(function(a, b) {
-        var distA = kakao.maps.geometry.distance(centerLatLng, new kakao.maps.LatLng(a.y, a.x));
-        var distB = kakao.maps.geometry.distance(centerLatLng, new kakao.maps.LatLng(b.y, b.x));
-        return distA - distB;
-    });
-    
-    console.log(places);
-
-
     for ( var i=0; i<places.length; i++ ) {
 
         // 마커를 생성하고 지도에 표시합니다
