@@ -1,0 +1,521 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #101322;
+    color: #FFFFFF;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    
+    height: 108px;
+    display: flex;
+    
+}
+
+header>a{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+}
+
+
+/* 검색창 */
+nav{
+    width: 80%;
+    padding-top: 20px;
+    
+}
+
+nav>form{
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+
+#search{
+    height: 60%;
+    width: 80%;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: none;
+  
+}
+
+
+
+input{
+    width: 100%;
+    height: 60%;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px 50px;
+    font-weight: bold;
+}
+
+#search>button{
+    position: absolute;
+    border: none;
+    outline: none;
+    background: none;
+    margin-left: 90%;
+
+
+}
+
+
+
+nav>div:nth-child(2){
+
+    height: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+nav>div:nth-child(2)>a{
+
+    padding: 0 100px;
+
+}
+
+
+
+
+
+header>div{
+    width: 20%;
+    display: flex;
+}
+
+
+header>div>div{
+    
+    flex: 1;
+ 
+    display: flex;
+    align-items: end;
+
+   
+}
+
+header>div>div:nth-child(1){
+
+    align-items: center;
+
+
+}
+
+
+#login_button{
+
+    height: 73px;
+    width: 160px;
+    border-radius: 30px 30px;
+    font-size: 24px;
+    font-weight:bold;
+    background-color: white;
+    font-weight:bold;
+
+}
+
+
+#user_button{
+
+    background: none;
+    border: none;
+    padding-bottom: 3px;
+
+}
+
+
+
+
+
+
+main{
+    height: 3060px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main>div{
+
+    margin: 50px 0px;
+    width: 1650px;
+}
+
+
+.movie{
+    height: 25%;
+    display: flex;
+}
+
+
+.movie_img{
+    width: 30%;
+    background-image: url(이미지/영화\ 포스터.png);
+    background-size: 100% 100%;
+
+
+}
+
+
+.movie>div:nth-child(2){
+    width: 70%;
+    margin-left: 132px;
+    background-color: #383B3E;
+}
+
+.movie_title{
+    display: flex;
+    height: 20%;
+}
+
+.movie_title>div:nth-child(1){
+    width: 10%;
+    background-image: url(이미지/Vector.png);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;/* 배경 이미지 1개 */
+    background-position: center;
+}
+
+.movie_title>div:nth-child(2){
+    width: 50%;
+    font-size: 48.76px;
+    font-weight:bold;
+    display: flex;
+    align-items: center;
+
+}
+
+.movie_title>div:nth-child(3){
+    width: 30%;
+    display: flex;
+
+}
+
+.movie_title>div:nth-child(3)>div{
+   
+    flex: 1;
+    background-image: url(이미지/팝콘\ 1.png);
+    background-repeat: no-repeat;/* 배경 이미지 1개 */
+    background-position: center;
+}
+
+
+
+.movie_summary{
+    height: 40%;
+    line-height: 3; /* 글자 높이 설정*/
+    font-size: 20px;
+    word-wrap: break-word; 
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4; /* 말줄임표 줄 위치 */
+    -webkit-box-orient: vertical; /* 플렉스 방향 가로로 설정 */
+    overflow: hidden;
+    padding: 0 30px;
+
+
+}
+
+.movie_description{
+    height: 40%;
+    display: flex;
+    font-size: 20px;
+
+}
+
+
+.movie_description>div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+.movie_description>div>div{
+    display: flex;
+    flex: 1;
+    align-items: center;
+   
+}
+
+
+.movie_description>div>div>a{
+    color: #6BB3F6;
+    margin-left: 10px;
+}
+
+
+.movie_description>div>div:nth-child(1)>a{
+    margin: 0px;
+}
+
+
+
+
+
+
+
+
+.movieP2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #383B3E;
+    padding: auto;
+    height: 650px;
+    margin-top: 60px;
+}
+
+.mp2Head {
+    height: 90px;
+  
+}
+
+.line1 {
+    height: 162px;
+    display: flex;
+
+}
+
+.l1-1 {
+    width: 400px;
+}
+
+.l1-2 {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.l1-3 {
+    width: auto;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.line2 {
+    height: 162px;
+    display: flex;
+}
+
+.line3 {
+    height: 162px;
+    display: flex;
+    
+}
+
+.l1-1 img {
+    margin-left: 140px;
+    margin-top: 30px;
+}
+
+
+#mm {
+    color: white;
+    font-size: 50px;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+#ms {
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    margin-left: 18%;
+}
+
+
+#my {
+    text-decoration: none ;
+    color: #7EDCF0;
+    margin-left: 280px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.l2-1 {
+    width: 400px;
+}
+
+.l2-2 {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l2-3 {
+    width: auto;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.line2 {
+    height: 162px;
+    display: flex;
+}
+
+.l2-1 img {
+    margin-left: 140px;
+    margin-top: 30px;
+}
+
+
+
+.l3-1 {
+    width: 400px;
+}
+
+.l3-2 {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.l3-3 {
+    width: auto;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.l3-1 img {
+    margin-left: 140px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+.comment{
+    height: 40%;
+    background-color: #383B3E;
+    margin: 40px 0px;
+}
+
+
+.comment>div:nth-child(1){
+
+    height: 20%;
+    font-size: 50px;
+    font-weight:bold;
+    margin-left: 50px;
+
+
+}
+
+
+.comment>div:nth-child(2){
+
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.user_comment>div{
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+
+}
+
+
+
+
+.comment>div:nth-child(3){
+
+    height: 20%;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    padding-left: 10%;
+}
+
+
+.comment_input{
+
+
+    height: 20%;
+    width: 20%;
+    text-align: center;
+    font-size: 100%;
+
+}
+
+.comment_box>div:nth-child(2){
+
+    width: 40%;
+    height: 40%;
+    display: flex;
+    margin: 0 10%;
+
+
+}
+
+.comment_box>div:nth-child(2)>div{
+
+
+    flex: 1;
+    background-image: url(이미지/팝콘\ 1.png);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;/* 배경 이미지 1개 */
+    background-position: center bottom;
+
+
+}
+
+
+
+.comment_box>button{
+
+    height: 20%;
+    width: 5%;
+    border-radius: 20%;
+    
+}
+
+
+
+
+
+main>div:nth-child(4){
+    height: 20%;
+    border: 1px black solid;
+    background-color: #383B3E;
+}
