@@ -165,6 +165,8 @@ main>section{
    
    margin: 50px 0;
    background-color: #383B3E;
+   border-radius: 20px;
+
 
 }
 
@@ -180,7 +182,6 @@ main>section{
     height: 651px;
     display: flex;
     background-color: #6A5A56;
-    border-radius: 20px;
     
 }
 
@@ -314,33 +315,299 @@ main>section{
 
     height: 1607px;
 
-
 }
 
 
 
 .screening_movie>div:nth-child(1){
 
-    height: 20%;
+    /* 제목 칸*/
 
+    height: 10%;
     font-size: 40px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
 
 }
 
 
 
-.screening_movie>div:nth-child(2){
+.screening_movie>.screening_movie_detail{
 
+    /*영화 칸  */
+
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+    padding: 2%;
+  
+}
+
+
+
+.screening_movie_detail>div{
+
+    /* 영화 가로줄 */
+    flex: 1;
+    display: flex;
+
+
+}
+
+
+.screening_movie_detail>div>div{
+
+    /* 영화 줄 칸 */
+    flex: 1;
+
+
+}
+
+
+.screening_movie_detail>div>div:nth-child(1){
+
+    /* 영화 이미지 칸 */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+
+.screening_movie_detail>div>div>img{
+
+    /* 영화 이미지 */
+    width: 218.09px;
+    height: 318.71px;
+
+}
+
+
+
+.screening_movie_detail>div>div:nth-child(2){
+
+    /* 영화 설명 칸*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.screening_movie_detail>div>div:nth-child(2)>div{
+
+    /* 영화 설명 칸 글자 줄*/
+    padding: 0.5%;
+    font-size: 30px;
+
+
+}
+
+.screening_movie_detail>div>div:nth-child(2)>div:nth-child(1){
+
+    /* 영화 설명 칸 글자 첫번째 줄*/
+    padding-bottom: 5%;
+
+
+
+}
+
+
+
+
+#img_checkbox{
+    /*체크박스 이미지  */
+    background-image: url(img/팝콘.png);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 메뉴 추천 */
+
+.recommended_menu{
+
+    height: 1380px;
+
+}
+
+
+
+
+.recommended_menu>div:nth-child(1){
+    /* 메뉴 제목 */
+    
+    height: 10%;
+    font-size: 48.4px;
+    font-weight: bold;
+    padding-top: 1%;
+    padding-left: 5%;
+
+}
+
+
+
+
+
+.recommended_menu>div:nth-child(2){
+    /* 메뉴 칸 */
+    
     height: 80%;
     display: flex;
     flex-direction: column;
-   
+
+
 }
 
 
-.screening_movie>div:nth-child(2)>div{
+.recommended_menu>div:nth-child(2)>div{
+    /* 메뉴 음식 줄 */
     border: 1px black solid;
- 
     flex: 1;
+    display: flex;
+  
+
+
+}
+
+
+.recommended_menu>div:nth-child(2)>div>div{
+    /* 메뉴 음식 줄 칸 */
+    border: 1px black solid;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
+
+}
+
+
+
+
+.recommended_menu>div:nth-child(2)>div>div:nth-child(1){
+    /* 메뉴 음식 줄 제목 칸 */
+
+    font-size: 40px;
+
+
+
+}
+
+
+
+
+
+.score_popcorn{
+
+    /* 점수 팝콘 칸 */
+    display: flex;
+    
+        
+
+}
+
+.score_popcorn>div{
+
+    background-color: yellowgreen;
+    border: 1px black solid;
+     /* 점수 팝콘 이미지 칸 */
+     flex: 1;
+     background-image: url(img/팝콘.png);
+     background-repeat: no-repeat;/* 배경 이미지 1개 */
+     background-position: center;
+}
+
+
+
+
+
+
+
+/* -------------- */
+
+
+
+
+
+
+/* 댓글 등록 */
+
+
+.comment{
+
+    height: 10%;
+
+
+}
+
+
+.comment form fieldset{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: red;
+
+
+}
+
+#write{
+/* 댓글 작성 입력 창 */
+border: #101322;
+
+    width: 30%;
+
 }
