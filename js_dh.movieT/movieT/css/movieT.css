@@ -175,7 +175,7 @@ main>div{
 
 .movie_img{
     width: 30%;
-    background-image: url(/js,dh/img/영화\ 포스터.png);
+    background-image: url(/js_dh.movieT/img/영화\ 포스터.png);
     background-size: 100% 100%;
 
 
@@ -195,7 +195,7 @@ main>div{
 
 .movie_title>div:nth-child(1){
     width: 10%;
-    background-image: url(/js,dh/img/Vector.png);
+    background-image: url(/js_dh.movieT/img/Vector.png);
     background-size: 50% 50%;
     background-repeat: no-repeat;/* 배경 이미지 1개 */
     background-position: center;
@@ -219,7 +219,7 @@ main>div{
 .movie_title>div:nth-child(3)>div{
    
     flex: 1;
-    background-image: url(/js,dh/img/팝콘\ 1.png);
+    background-image: url(/js_dh.movieT/img/팝콘\ 1.png);
     background-repeat: no-repeat;/* 배경 이미지 1개 */
     background-position: center;
 }
