@@ -1,6 +1,6 @@
 // 1) 즐겨찾기 수정 버튼 누르면
 document.getElementById("favorite-popup").addEventListener("click",function(){
-    window.open("http://192.168.219.108:5501/mypage-create-main/my-page-popup-favorite.html",
+    window.open("http://192.168.50.200:5501/mypage-create-main/my-page-popup-favorite.html",
     "팝업 즐겨찾기",
     "width=1200, height=850, top=100, left=400");
 });
