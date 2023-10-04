@@ -1,0 +1,82 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.admin-container {
+    display: flex;
+    
+}
+
+.admin-menu {
+
+    margin-right: 100px;
+    width: 200px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    height: 100vh; /* 화면 높이를 최대한 활용 */
+   
+}
+
+.admin-menu ul {
+    
+    margin-top: 150px;
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.admin-menu li {
+    margin-bottom: 100px;
+    padding: 10px;
+    text-align: center;
+}
+
+.admin-menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+}
+
+.movie-list {
+    flex: 1;
+    padding: 20px;
+}
+
+.movie-search input {
+    
+    width: 30%;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.movie-item {
+   
+    width: 50%;
+    height: 50px;
+    border: 1px solid gray;
+    background-color: gray;
+    padding: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.movie-buttons {
+    display: flex;
+}
+
+.edit-button, .delete-button {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.movie-title {
+    color: white;
+}
+

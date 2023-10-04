@@ -1,0 +1,76 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.admin-menu {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    padding: 20px 0;
+}
+
+.admin-menu ul {
+    margin-top: 150px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-menu li {
+    margin-bottom: 100px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.admin-menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.menu-content {
+    flex-basis: 60%;
+    margin-left: 300px;
+    padding: 20px;
+    display: flex; /* Flexbox 레이아웃 설정 */
+    flex-direction: row; /* 가로로 나열 */
+}
+
+.menu-section {
+    align-items: center;
+    height: 400px;
+    border: 1px solid #ddd;
+    flex-basis: 30%;
+    padding: 20px;
+    margin-right: 30px; /* 각 메뉴 섹션 간 간격 */
+    flex: 1; /* 자동으로 너비를 분배하여 가로 정렬 */
+}
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-list li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu-section h2 {
+    margin-top: 0;
+}
+
+
+
+
+
+
