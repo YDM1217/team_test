@@ -44,34 +44,61 @@ document.getElementsByName("comment-check").forEach(function(v) {
 });
 
 
+// 3) 즐겨찾기 -> 영화관, 영화 구분하기
+const movieBtn = document.getElementById("movie-favorite-btn");
+const cinemaBtn = document.getElementById("cinema-favorite-btn");
+
+const favoriteMovieContainer =document.getElementById("movie-favorite-container");
+const favoriteCinemaContainer =document.getElementById("cinema-favorite-container");
 
 
 
-// 3) 스크롤하기
-var swiper = new Swiper('.favorite-list', {
-  // direction: 'horizontal',
-  autoplay: true,
-  loop: true,
-  spaceBetween: 30,
-  slidesPerView: 3,
-  navigation: {
-    // prevEl: '.awards .swiper-prev',
-    nextEl: '.next-btn-container'
-  }
+cinemaBtn.addEventListener("click" ,function(){
+    
+  console.log("영화 누름");
+
+  cinemaBtn.style.opacity = "1";
+  cinemaBtn.style.color = "black";
+
+  movieBtn.style.opacity = "0.5";
+
+  favoriteMovieContainer.style.display = "none";
+  favoriteCinemaContainer.style.display = "";
+});
+
+
+movieBtn.addEventListener("click" ,function(){
+    
+  console.log("영화관 누름");
+
+  cinemaBtn.style.opacity = "0.5";
+
+
+  movieBtn.style.opacity = "1";
+  movieBtn.style.color = "black";
+
+  favoriteMovieContainer.style.display = "";
+  favoriteCinemaContainer.style.display = "none";
 });
 
 
 
 
+// 4) 스크롤하기
+// var swiper = new Swiper('.favorite-list', {
+//   // direction: 'horizontal',
+//   autoplay: true,
+//   loop: true,
+//   spaceBetween: 30,
+//   slidesPerView: 3,
+//   navigation: {
+//     // prevEl: '.awards .swiper-prev',
+//     nextEl: '.next-btn-container'
+//   }
+// });
 
 
 
-
-
-
-
-
-// 4) 즐겨찾기 -> 영화관, 영화 구분하기
 
 // 5) 
 
