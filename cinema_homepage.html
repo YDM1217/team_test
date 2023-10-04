@@ -47,7 +47,7 @@
         #pagination .on {font-weight: bold; cursor: default;color:#777;}
         /* ====================지도 끝====================== */
         
-        /* 영화 링크 */
+        /* 영화이동 링크 */
         .movie_link { width: 400px; height: 700px; margin-top: 50px; border-radius: 10px; 
                       background: url(/homepage_image/44014266-영화-슬레이트.jpg), lightgray 50% / cover no-repeat; }
         
@@ -66,7 +66,7 @@
                            border-radius: 15px; justify-content:center; margin-top: 70px;}    
 
         /* 특별관 설명부분 */
-        .cinema_special{  flex-basis: 45%; align-items: center;    margin: 30px 20px 20px 20px;  color:white;  text-decoration: none;}    
+        .cinema_special{  flex-basis: 45%;    margin: 30px 20px 20px 20px;  color:white;  text-decoration: none;}    
         /*특별관 홍보 이미지 */
         #cinema_special{
             background: url(/homepage_image/특별관.jpg);  background-size: cover;   background-position: center;
@@ -85,13 +85,171 @@
         /* 할인행사 이미지 */
         .discount_img{background: url(/homepage_image/cgv용산.jfif); background-size: cover; 
                       background-position: center; flex-basis: 20%; height: 230px; border-radius: 15px;}
+
+
+        /* 상단 로고 부분 css */
+        
+        nav{
+            flex-basis: 100%;
+            height: 78px;
+
+            display: flex;
+
+            /* 위에 고정 */
+            position:sticky;
+            top: 0;
+
+            background-color: #101322;
+
+            /* 요소 우선순위 주기 ( 앞으로 올리기 )  */
+            z-index: 3;
+        }
+
+
+        *{
+            box-sizing: border-box;
+            list-style : none; /* 리스트 스타일 X */
+            text-decoration: none;
+            padding: 0;
+            margin: 0;
+            font-family: 'Noto Sans','GmarketSansMedium' ;
+            /* font-family: 'KBO-Dia-Gothic_bold'; */
+        }
+
+
+        nav section:not(:nth-child(2)){
+        flex-basis: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* 로고 폰트 사이즈  ① 로고 사이즈 변경 및 이미지면 이미지 사이즈 변경  */
+        font-size: 40px;
+        font-weight: bold;
+        }
+
+        /* nav- 검색창 */
+        nav section:nth-child(2){
+            flex-basis: 60%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* .movie-search-area > form{
+            padding-top: px;
+        } */
+
+        .movie-search-area fieldset{
+            width: 1000px;
+            border: 2px solid black;
+
+            height: 45px;
+            /*border-radius: 5px; */
+            margin: 0;
+            margin-bottom: 5px;
+            padding: 2px;
+            display: flex;
+        }
+
+        #query{
+            flex-basis: 92%;
+            padding: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px 0px 0px 5px  ;
+            outline: none;  
+            background-color: white;
+        }
+
+        #search-btn{
+            flex-basis: 8%;
+            line-height: 35px;
+            font-size: 1.2em;
+            border-radius: 0px 5px 5px 0px   ;
+            border: none;
+            background-color: white; /* transparent : 투명 */
+            color: black;
+        }
+
+
+
+
+        .main-sort > a{
+            margin : 0px 50px;
+        }
+
+
+        /* nav - 유저 버튼 */
+        /* .user-login{
+            flex-basis: 50%;
+            display: flex;
+            justify-content: center;
+        } */
+
+        .user-login {
+            width: 170px;
+            height: 55px;
+            border-radius: 50px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            background-color: white;
+            color:black;
+            font-size: 30px;
+        }
+
+        /* ===========로고 끝 ================ */
+
     </style>
 </head>
 
 
 <body>
  
-    <div style="height: 108px; width: 100%; background-color: #CDD2FF;" ></div>
+    <nav>
+        <section class = "logo">
+            <!-- ① 로고 이미지? 및 버튼으로 변경  -->
+            <a>MovieInSight</a>
+        </section>
+        
+        <section class = "movie-search-area">
+            <form action="#" name="search-form"> <!-- ② action 값 변경-->
+                <fieldset>
+                    <input type="search" id="query" name="query"
+                    autocomplete="on" placeholder="검색">
+                    <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+                </fieldset>
+            </form>
+
+            <div class = "main-sort">
+                <!-- ③ a 태그 입력하기 진행하기! main페이지로 이동할 수 있게  -->
+                <a>#인기순</a>
+                <a>#최신순</a>
+                <a>#장르별</a>
+            </div>
+        </section>
+
+        <section class = "user-function">
+            <!-- ④ a 태그로 만들기! -->
+            <a class = "user-login">
+                <!-- <a>LOGIN</a> -->
+                LOGIN
+            </a>
+
+             <!-- ⑤ 버튼으로 만들어야 하나? -->
+            <div class = "user-mypage">
+                <div class = "mypage-wrapper">
+                    <!-- ⑥이거 나중에 유저 사진으로 변경하기 -->
+                    <a class="fa-solid fa-user"></a>
+                </div>
+            </div>
+        </section>
+    </nav>
 
     
     <button onclick="sortKoreanLinks()" style="margin: 10px 0 0 150px;  border-radius: 10px;">한글순</button>

@@ -1,11 +1,40 @@
 
 // ===========지도 api의 javaScript==================================================
 
+
+
+
+    
+// 전역 변수로 현재 위치 정보를 저장할 객체 선언
+var currentLocation = null;
+currentlatitude = 0;
+currentlongitude = 0;
+
+navigator.geolocation.getCurrentPosition(function(position) {
+    // 위치 정보를 currentLocation 변수에 할당
+
+    currentlatitude = position.coords.latitude;
+    currentlongitude = position.coords.longitude
+
+    
+    // 이후에 currentLocation 변수를 사용할 수 있음
+    console.log("현재 위도:", currentlatitude);
+    console.log("현재 경도:", currentlongitude);
+
+
+}, function(error) {
+    console.error("위치 정보를 가져오는데 실패했습니다.", error);
+});
+
+    
+
+
+
 var markers = [];
 
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = {
-        center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
+        center: new kakao.maps.LatLng(currentlatitude, currentlongitude), // 지도의 중심좌표
         level: 3 // 지도의 확대 레벨
     };  
 
@@ -41,7 +70,7 @@ function placesSearchCB(data, status, pagination) {
 
         // 정상적으로 검색이 완료됐으면
         // 검색 목록과 마커를 표출합니다
-        displayPlaces(data);
+        distanceSort(data);
 
         // 페이지 번호를 표출합니다
         displayPagination(pagination);
@@ -57,6 +86,47 @@ function placesSearchCB(data, status, pagination) {
         return;
 
     }
+}
+
+function getDistance(lat1, lon1, lat2, lon2, unit) {
+	if ((lat1 == lat2) && (lon1 == lon2)) {
+		return 0;
+	}
+	else {
+		var radlat1 = Math.PI * lat1/180;
+		var radlat2 = Math.PI * lat2/180;
+		var theta = lon1-lon2;
+		var radtheta = Math.PI * theta/180;
+		var dist = Math.sin(radlat1) * Math.sin(radlat2) + Math.cos(radlat1) * Math.cos(radlat2) * Math.cos(radtheta);
+		if (dist > 1) {
+			dist = 1;
+		}
+		dist = Math.acos(dist);
+		dist = dist * 180/Math.PI;
+		dist = dist * 60 * 1.1515;
+		if (unit=="K") { dist = dist * 1.609344 }
+		if (unit=="N") { dist = dist * 0.8684 }
+		return dist;
+	}
+}
+
+    function distanceSort(data)  {
+    
+
+    // 각 장소의 거리를 계산하고 거리 정보를 추가
+    for (let i = 0; i < data.length; i++) {
+        let distance = getDistance(currentlatitude, currentlongitude, data[i].y, data[i].x, "K");
+        data[i].distance = distance;
+    }
+
+    // 거리 순으로 정렬
+    data.sort(function (a, b) {
+        return a.distance - b.distance;
+    });
+
+    // 정렬된 결과를 활용하여 원하는 작업 수행
+    displayPlaces(data);
+
 }
 
 // 검색 결과 목록과 마커를 표출하는 함수입니다
@@ -243,3 +313,13 @@ function sortKoreanLinks() {
         container.appendChild(linksArray[i]);
     }
 }
+
+
+// ==================================================//
+
+
+
+
+
+
+
