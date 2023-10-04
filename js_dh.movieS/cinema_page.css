@@ -314,6 +314,7 @@ main>section{
 
     height: 1607px;
 
+
 }
 
 
@@ -332,9 +333,14 @@ main>section{
 .screening_movie>div:nth-child(2){
 
     height: 80%;
-    flex: 1;
-    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+   
 }
 
 
-
+.screening_movie>div:nth-child(2)>div{
+    border: 1px black solid;
+ 
+    flex: 1;
+}
