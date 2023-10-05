@@ -550,25 +550,8 @@ main>section{
 
 
 
-.score_popcorn{
 
-    /* 점수 팝콘 칸 */
-    display: flex;
-    
-        
 
-}
-
-.score_popcorn>div{
-
-    background-color: yellowgreen;
-    border: 1px black solid;
-     /* 점수 팝콘 이미지 칸 */
-     flex: 1;
-     background-image: url(img/팝콘.png);
-     background-repeat: no-repeat;/* 배경 이미지 1개 */
-     background-position: center;
-}
 
 
 
