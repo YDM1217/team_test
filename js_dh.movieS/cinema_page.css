@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+
 }
 
 body{
@@ -666,7 +667,7 @@ input.iii {
     display: flex;
     width: 698px;
     height: 100px;
-    background-image: url(/js_dh.movieS/img/bar.png);
+    background-image: url(img/bar.png);
 }
 
 .fsl5-1X img {
@@ -768,7 +769,6 @@ input.iiiX {
 
 .recommended_menu>div:nth-child(2)>div{
     /* 메뉴 음식 줄 */
-    border: 1px black solid;
     flex: 1;
     display: flex;
   
@@ -779,7 +779,6 @@ input.iiiX {
 
 .recommended_menu>div:nth-child(2)>div>div{
     /* 메뉴 음식 줄 칸 */
-    border: 1px black solid;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -831,21 +830,70 @@ input.iiiX {
 
 }
 
-
-.comment form fieldset{
-
+.comment fieldset{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: red;
+    border: none;
+    color: black;
+    height: 100%;
+    margin-right: 300px;
+
+}
+
+
+
+
+#menuForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 50%;
+    height: 80%;
+    border-radius: 20px;
+    
 
 
 }
 
-#write{
-/* 댓글 작성 입력 창 */
-border: #101322;
 
-    width: 30%;
 
+
+/* 평점선택 */
+#rating{
+    width: 20%;
+    
+
+
+}
+
+
+/* 등록 버튼 */
+#submit{
+    background-image: url(img/write.png);
+    background-repeat: no-repeat;/* 배경 이미지 1개 */
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    border: 0px;
+ 
+
+
+
+
+}
+
+.comment fieldset form label {
+   
+    margin-right: 10px;
+}
+
+
+
+
+/* 메뉴선택과 평점선택 사이 띄우기 */
+.comment fieldset form label[for="rating"] {
+   
+    margin-left: 50px;
 }

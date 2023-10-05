@@ -9,14 +9,14 @@
 <body>
     <header>
         <a>
-            <img src="/js_dh.movieS/img/로고.png">
+            <img src="img/logo.png">
         </a>
         <nav>
             <form action="#">
                 <fieldset id="search">
                     <input type="search" placeholder="검색" >
                     <button>
-                        <img src="/js_dh.movieS/img/search-icon.png" id="search_icon">
+                        <img src="img/search-icon.png" id="search_icon">
                     </button>
                 </fieldset>
             </form>
@@ -32,7 +32,7 @@
             </div>
             <div>
                 <button id="user_button">
-                    <img src="/js_dh.movieS/img/사용자.png">
+                    <img src="img/user1.png">
                 </button>
             </div>
         </div>
@@ -122,7 +122,7 @@
             </section>
             <section class="FSL2">
                 <div class="fsl2-1">
-                    <img src="/js_dh.movieS/img/pop3pc.png">
+                    <img src="img/pop3pc.png">
                 </div>
                 <div class="fsl2-2">
                     <p id="fff">id : 영화관 시설 평가내용 .............................................................</p>
@@ -130,7 +130,7 @@
             </section>
             <section class="FSL3">
                 <div class="fsl3-1">
-                    <img src="/js_dh.movieS/img/pop2pc.png">
+                    <img src="img/pop2pc.png">
                 </div>
                 <div class="fsl3-2">
                     <p id="fff">id : 영화관 시설 평가내용 .............................................................</p>
@@ -139,7 +139,7 @@
             <section class="FSL4">
                 <div class="fsl4-1"></div>
                 <div class="fsl4-2">
-                    <img src="/js_dh.movieS/img/pop4pc.png">
+                    <img src="img/pop4pc.png">
                     <p id="fff">id : 영화관 시설 평가내용 .............................................................</p>
                 </div>
             </section>
@@ -148,12 +148,12 @@
                     <div class="fsl5-1">
                             <input type="text" class="iii" placeholder="시설 평가내용 입력....">
                             <p id="ff6">평점 : </p>
-                            <img src="/js_dh.movieS/img/pop5pc.png" width="200px" height="40px">
+                            <img src="img/pop5pc.png" width="200px" height="40px">
                         </div>
                     </div>
                     <div class="fsl5-2">
                         <a href="#">
-                            <img src="/js_dh.movieS/img/list.png">
+                            <img src="img/list.png">
                         </a>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
             </section>
             <section class="FSL2X">
                 <div class="fsl2-1X">
-                    <img src="/js_dh.movieS/img/pop3pc.png">
+                    <img src="img/pop3pc.png">
                 </div>
                 <div class="fsl2-2X">
                     <p id="fffX">id : 진원 천절도 평가내용 .............................................................</p>
@@ -175,7 +175,7 @@
             </section>
             <section class="FSL3X">
                 <div class="fsl3-1X">
-                    <img src="/js_dh.movieS/img/pop2pc.png">
+                    <img src="img/pop2pc.png">
                 </div>
                 <div class="fsl3-2X">
                     <p id="fffX">id : 진원 천절도 평가내용 .............................................................</p>
@@ -184,7 +184,7 @@
             <section class="FSL4X">
                 <div class="fsl4-1X"></div>
                 <div class="fsl4-2X">
-                    <img src="/js_dh.movieS/img/pop4pc.png">
+                    <img src="img/pop4pc.png">
                     <p id="fffX">id : 진원 천절도 평가내용 .............................................................</p>
                 </div>
             </section>
@@ -193,12 +193,12 @@
                     <div class="fsl5-1X">
                             <input type="text" class="iiiX" placeholder="친절도 평가내용 입력....">
                             <p id="ff6X">평점 : </p>
-                            <img src="/js_dh.movieS/img/pop5pc.png" width="200px" height="40px">
+                            <img src="img/pop5pc.png" width="200px" height="40px">
                         </div>
                     </div>
                     <div class="fsl5-2X">
                         <a href="#">
-                            <img src="/js_dh.movieS/img/list.png">
+                            <img src="img/list.png">
                         </a>
                     </div>
                 </div>
@@ -276,22 +276,34 @@
 
 
             <div class="comment">
-                <form action="">
-                    <fieldset>
-                       <input type="text" id="write">
-                       <input type="checkbox" id="img_checkbox">
-                       <button>
-                        <img src="img/write.png" id="search_icon">
-                        </button>
-                    </fieldset>
-                </form>    
+                <fieldset>
+                    <form id="menuForm">
+                        <label for="menu">해당 극장 메뉴</label>
+                        <select id="menu" name="menu">
+                            <option value="" disabled selected>목록</option>
+                            <option value="항목1">치즈냠냠</option>
+                            <option value="항목2">스위찰리</option>
+                            <option value="항목3">팝콘팝</option>
+                        </select>
+
+                   
+                
+                        <!-- 평점 선택 -->
+                        <label for="rating">평점 선택:</label>
+                        <input type="number" id="rating" name="rating" min="1" max="5">
+                    </form>
+                        <!-- 등록 버튼 -->
+                        <button type="submit" id="submit" form="menuForm">
+                 </fieldset>
             </div>
 
+       
 
 
         </section>
     </main>
 
-    
+
+    <script src="cinema_page.js"></script>
 </body>
 </html>
