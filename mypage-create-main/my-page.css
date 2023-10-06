@@ -522,6 +522,9 @@ aside > a{
 .comment-list-del-container > table{
     flex-basis: 5%;
     width: 1020px;
+
+    overflow: auto;
+    overflow-x: hidden;
     
 }
 
