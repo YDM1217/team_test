@@ -125,7 +125,7 @@
                     <img src="img/pop3pc.png">
                 </div>
                 <div class="fsl2-2">
-                    <p id="fff">id : 영화관 시설 평가내용 .............................................................</p>
+                    <p id="fffX">id : 영화관 시설 평가내용 .............................................................</p>
                 </div>
             </section>
             <section class="FSL3">
@@ -133,14 +133,14 @@
                     <img src="img/pop2pc.png">
                 </div>
                 <div class="fsl3-2">
-                    <p id="fff">id : 영화관 시설 평가내용 .............................................................</p>
+                    <p id="fffX">id : 영화관 시설 평가내용 .............................................................</p>
                 </div>
             </section>
             <section class="FSL4">
                 <div class="fsl4-1"></div>
                 <div class="fsl4-2">
                     <img src="img/pop4pc.png">
-                    <p id="fff">id : 영화관 시설 평가내용 .............................................................</p>
+                    <p id="fffX">id : 영화관 시설 평가내용 .............................................................</p>
                 </div>
             </section>
             <section class="FSL5">
@@ -149,8 +149,8 @@
                             <input type="text" class="iii" placeholder="시설 평가내용 입력....">
                             <p id="ff6">평점 : </p>
                             <img src="img/pop5pc.png" width="200px" height="40px">
-                        </div>
                     </div>
+                </div>
                     <div class="fsl5-2">
                         <a href="#">
                             <img src="img/list.png">
@@ -192,7 +192,7 @@
                 <div class="Fsl5X">
                     <div class="fsl5-1X">
                             <input type="text" class="iiiX" placeholder="친절도 평가내용 입력....">
-                            <p id="ff6X">평점 : </p>
+                            <p id="ff6">평점 : </p>
                             <img src="img/pop5pc.png" width="200px" height="40px">
                         </div>
                     </div>
@@ -289,16 +289,34 @@
                    
                 
                         <!-- 평점 선택 -->
-                        <label for="rating">평점 선택:</label>
-                        <input type="number" id="rating" name="rating" min="1" max="5">
+                        <div class="star-rating space-x-4 mx-auto">
+                            <input type="radio" id="5-stars" name="rating" value="5" v-model="ratings"/>
+                            <label for="5-stars" class="star pr-4" >★</label>
+                            <input type="radio" id="4-stars" name="rating" value="4" v-model="ratings"/>
+                            <label for="4-stars" class="star">★</label>
+                            <input type="radio" id="3-stars" name="rating" value="3" v-model="ratings"/>
+                            <label for="3-stars" class="star">★</label>
+                            <input type="radio" id="2-stars" name="rating" value="2" v-model="ratings"/>
+                            <label for="2-stars" class="star">★</label>
+                            <input type="radio" id="1-star" name="rating" value="1" v-model="ratings" />
+                            <label for="1-star" class="star">★</label>
+                        </div>
+
+                         <!-- 평점 선택 -->
+                         <label for="rating">평점 선택:</label>
+                         <input type="number" id="rating" name="rating" min="1" max="5">
+
+                       
                     </form>
                         <!-- 등록 버튼 -->
                         <button type="submit" id="submit" form="menuForm">
                  </fieldset>
             </div>
+            
+         
 
-       
 
+            
 
         </section>
     </main>

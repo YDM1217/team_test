@@ -18,8 +18,9 @@ button {
 
 header {
     
-    height: 108px;
+    height: 1.66%;
     display: flex;
+  
     
 }
 
@@ -35,7 +36,7 @@ header>a{
 /* 검색창 */
 nav{
     width: 80%;
-    padding-top: 20px;
+    padding-top: 1.5%;
     
 }
 
@@ -68,9 +69,9 @@ input{
     height: 60%;
     outline: none;
     border: none;
-    font-size: 18px;
+    font-size: 1rem;
     border-radius: 10px;
-    padding: 10px 50px;
+    padding: 1% 6%;
     font-weight: bold;
 }
 
@@ -94,10 +95,10 @@ nav>div:nth-child(2){
 }
 
 
-
+/* 검색창 밑 태그 */
 nav>div:nth-child(2)>a{
 
-    padding: 0 100px;
+    padding: 0 7%;
 
 }
 
@@ -131,10 +132,10 @@ header>div>div:nth-child(1){
 
 #login_button{
 
-    height: 73px;
-    width: 160px;
+    height: 70%;
+    width: 100%;
     border-radius: 30px 30px;
-    font-size: 24px;
+    font-size: 1.3rem;
     font-weight:bold;
     background-color: white;
     font-weight:bold;
@@ -146,12 +147,14 @@ header>div>div:nth-child(1){
 
     background: none;
     border: none;
-    padding-bottom: 3px;
+    padding-bottom: 1%;
 
 }
 
 main{
-    margin: 50px 163px;
+    border: yellowgreen 2px solid;
+
+    margin: 2% 8%;
    
     height: 90%;
     display: flex;
@@ -164,7 +167,7 @@ main>section{
   
 
    
-   margin: 50px 0;
+   margin: 3% 0;
    background-color: #383B3E;
    border-radius: 20px;
 
@@ -180,7 +183,7 @@ main>section{
 
 
 
-    height: 651px;
+    height: 11.5%;
     display: flex;
     background-color: #6A5A56;
     
@@ -206,15 +209,15 @@ main>section{
 
 #cgv_yongsan{
 
-    width: 682px;
-    height: 500px;
+    width: 85%;
+    height: 80%;
 
 }
 
 
 .cinema>div:nth-child(2){
     
-    margin-right: 50px;
+    margin-right: 3%;
    
    }
    
@@ -247,7 +250,7 @@ main>section{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 40px
+    font-size: 2.5rem;
 }
 
 
@@ -278,13 +281,13 @@ main>section{
 
     height: 60%;
     background-color: #FFF2F2;
-    margin-top: 50px;
+    margin-top: 5%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     padding: 15%;
     color: black;
-    font-size: 19.37px;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
@@ -292,7 +295,7 @@ main>section{
 
 .cinema_description>div>div{
 
-    padding-bottom: 30px;
+    padding-bottom: 5%;
     /* 줄 간격 */
 
 }
@@ -314,7 +317,7 @@ main>section{
 
 .screening_movie{
 
-    height: 1607px;
+    height: 29.9%
 
 }
 
@@ -325,11 +328,11 @@ main>section{
     /* 제목 칸*/
 
     height: 10%;
-    font-size: 40px;
+    font-size: 3rem;
     font-weight: bold;
     display: flex;
     align-items: center;
-    padding-left: 100px;
+    padding-left: 5%;
 
 }
 
@@ -342,7 +345,7 @@ main>section{
     height: 90%;
     display: flex;
     flex-direction: column;
-    margin-right: 200px;
+    margin-right: 10%;
     padding: 2%;
   
 }
@@ -385,8 +388,8 @@ main>section{
 .screening_movie_detail>div>div>img{
 
     /* 영화 이미지 */
-    width: 218.09px;
-    height: 318.71px;
+    width: 35%;
+    height: 70%;
 
 }
 
@@ -409,7 +412,7 @@ main>section{
 
     /* 영화 설명 칸 글자 줄*/
     padding: 0.5%;
-    font-size: 30px;
+    font-size: 1.5rem;
 
 
 }
@@ -443,7 +446,7 @@ main>section{
     display: flex;
     flex-direction: column;
     width: 1;
-    height: 800px;
+    height: 14.7%;
 }
 
 .FSL1 {
@@ -463,8 +466,8 @@ main>section{
 }
 
 .fsl2-1 img {
-   margin-left: 100px;
-   margin-top: 25px;
+   margin-left: 6%;
+   margin-top: 3%;
    margin-bottom: 0;
 }
 
@@ -484,8 +487,8 @@ main>section{
 }
 
 .fsl3-1 img {
-    margin-top: 25px;
-    margin-left: 100px;
+    margin-top: 3%;
+    margin-left: 6%;
     margin-bottom: 0;
 }
 
@@ -508,7 +511,8 @@ main>section{
 }
 
 .fsl4-2 img {
-    margin-left: 100px;
+    margin-top: 3%;
+    margin-left: 6%;
 }
 
 .FSL5 {
@@ -518,41 +522,35 @@ main>section{
 
 .Fsl5 {
     display: flex;
-    margin-top: 80px;
-    margin-left: 180px;
+    margin-top: 3%;
+    margin-left: 6%;
 }
 
 .fsl5-1 {
     display: flex;
     width: 698px;
     height: 100px;
-    background-image: url(/js_dh.movieS/img/bar.png);
+    background-image: url(img/bar.png);
 }
 
 .fsl5-1 img {
     margin-left: 0;
-    margin-top: 23px;
+    margin-top: 3%;
 }
 
-.fsl5-2 {
-    width: 100px;
-    height: 100px;
-}
 
 .fsl5-2 img {
-    margin-left: 5px;
-    margin-top: 80px;
+    margin-left: 1%;
+    margin-top: 50%;
 }
+
 
 #fs1 {
     font-size: 40px;
-    margin-top: 30px;
-    margin-left: 80px;
+    margin-top: 2%;
+    margin-left: 6%;
 }
 
-#fff {
-    margin-left: 100px;
-}
 
 #ff5 {
     margin-left: 50px;
@@ -584,7 +582,7 @@ input.iii {
     display: flex;
     flex-direction: column;
     width: 1;
-    height: 800px;
+    height: 14.7%;
 }
 
 .FSL1X {
@@ -604,8 +602,8 @@ input.iii {
 }
 
 .fsl2-1X img {
-   margin-left: 100px;
-   margin-top: 25px;
+   margin-left: 6%;
+   margin-top: 3%;
    margin-bottom: 0;
 }
 
@@ -625,8 +623,8 @@ input.iii {
 }
 
 .fsl3-1X img {
-    margin-top: 25px;
-    margin-left: 100px;
+    margin-left: 6%;
+    margin-top: 3%;
     margin-bottom: 0;
 }
 
@@ -649,7 +647,8 @@ input.iii {
 }
 
 .fsl4-2X img {
-    margin-left: 100px;
+    margin-left: 6%;
+    margin-top: 3%;
 }
 
 .FSL5X {
@@ -659,8 +658,8 @@ input.iii {
 
 .Fsl5X {
     display: flex;
-    margin-top: 80px;
-    margin-left: 180px;
+    margin-top: 3%;
+    margin-left: 6%;
 }
 
 .fsl5-1X {
@@ -672,7 +671,7 @@ input.iii {
 
 .fsl5-1X img {
     margin-left: 0;
-    margin-top: 23px;
+    margin-top: 3%;
 }
 
 .fsl5-2X {
@@ -681,26 +680,20 @@ input.iii {
 }
 
 .fsl5-2X img {
-    margin-left: 5px;
-    margin-top: 80px;
+    margin-left: 1%;
+    margin-top: 50%;
 }
 
 #fs1X {
     font-size: 40px;
-    margin-top: 30px;
-    margin-left: 80px;
+    margin-top: 2%;
+    margin-left: 6%;
 }
 
 #fffX {
-    margin-left: 100px;
+    margin-left: 6%;
 }
 
-#ff5X {
-    margin-left: 50px;
-    margin-top: 33px;
-    color: black;
-    font-size: 15px;
-}
 
 #ff6X {
     margin-left: 100px ;
@@ -710,8 +703,8 @@ input.iii {
 }
 
 input.iiiX {
-    margin-top: 15px;
-    margin-left: 30px;
+    margin-top: 2%;
+    margin-left: 2%;
     padding: 0;
     margin-right: 0;
     width: 300px;
@@ -734,7 +727,7 @@ input.iiiX {
 
 .recommended_menu{
 
-    height: 1380px;
+    height: 25.5%;
 
 }
 
@@ -897,3 +890,43 @@ input.iiiX {
    
     margin-left: 50px;
 }
+
+
+
+
+
+
+
+
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    justify-content: space-around;
+    padding: 0 0.2em;
+    text-align: center;
+    width: 5em;
+  }
+   
+  .star-rating input {
+    display: none;
+  }
+   
+  .star-rating label {
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2.3px;
+    -webkit-text-stroke-color: #2b2a29;
+    cursor: pointer;
+  }
+   
+  .star-rating :checked ~ label {
+    -webkit-text-fill-color: gold;
+  }
+   
+  .star-rating label:hover,
+  .star-rating label:hover ~ label {
+    -webkit-text-fill-color: #fff58c;
+  }
+  

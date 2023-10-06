@@ -28,3 +28,5 @@ function sendDataToDatabase(menu, rating) {
 
     // 여기에서 실제 데이터베이스로 데이터를 보내는 코드를 작성합니다.
 }
+
+
