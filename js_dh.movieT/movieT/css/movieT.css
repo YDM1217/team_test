@@ -193,11 +193,16 @@ main>div{
     height: 20%;
 }
 
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .movie_title>div:nth-child(1){
     width: 10%;
-    background-image: url(/js_dh.movieT/img/Vector.png);
     background-size: 50% 50%;
-    background-repeat: no-repeat;/* 배경 이미지 1개 */
     background-position: center;
 }
 
@@ -263,15 +268,18 @@ main>div{
    
 }
 
+.movie_description>div>div{
+    margin-left: 3%;
+}
 
 .movie_description>div>div>a{
     color: #6BB3F6;
-    margin-left: 10px;
+    margin-left: 3%;
 }
 
 
 .movie_description>div>div:nth-child(1)>a{
-    margin: 0px;
+    margin: 1%;
 }
 
 
@@ -286,7 +294,7 @@ main>div{
     background-color: #383B3E;
     padding: auto;
     height: 650px;
-    margin-top: 0px;
+    margin-top: 0%;
 }
 
 .mp2Head {
@@ -320,6 +328,7 @@ main>div{
 .line2 {
     height: 162px;
     display: flex;
+    justify-content: space-between;
 }
 
 .line3 {
@@ -329,16 +338,16 @@ main>div{
 }
 
 .l1-1 img {
-    margin-left: 140px;
-    margin-top: 30px;
+    margin-left: 35%;
+    margin-top: 8%;
 }
 
 
 #mm {
     color: white;
     font-size: 50px;
-    margin-left: 150px;
-    margin-top: 10px;
+    margin-left: 9%;
+    margin-top: 1%;
 }
 
 #ms {
@@ -433,26 +442,32 @@ main>div{
 
 #comment {
   font-size: 50px;
-  margin-top: 10px;
-  margin-left: 140px;
+  margin-top: 1%;
+  margin-left: 10%;
 }
 
 .combody {
     height: 510px;
     width: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #474C50;
 }
 
+
 .comb1 {
-    height: 72.5px;
+    height: 90.5px;
     width: auto;
+    display: flex;
 }
 
 .comb1 img {
+    margin-top: 2.5%;
     width: 33px;
 }
 
 #pop1 {
-   margin-left: 80px; 
+   margin-left: 5%; 
 }
 
 #pop2 {
@@ -470,10 +485,12 @@ main>div{
     height: 72.5px;
     width: auto;
     padding: 0;
+    display: flex;
 }
 
 .comb3 {
-    height: 90px;
+    height: 80px;
+    display: flex;
 }
 
 .comb3 img {
@@ -490,14 +507,17 @@ main>div{
 
 .comb4 {
     height: 80px;
+    display: flex;
 }
 
 .comb5 {
-    height: 100px;
+    height: 80px;
+    display: flex;
 }
 
 .comb6 {
     height: 80px;
+    display: flex;
 }
 
 .comb5 img {
@@ -525,6 +545,12 @@ main>div{
     background-color: #D9D9D9;
 }
 
+.DDInput {
+    margin-top: 2%;
+    background-color: transparent;
+    border: none;
+}
+
 #ddd1 {
     font-weight: 550;
     font-size: 15px;
@@ -534,10 +560,12 @@ main>div{
 
 .CF2 {
     height: 145px;
-    width: 400px;
+    width: 20%;
     display: flex;
     margin: 0;
     padding: 0;
+    margin-right: 5%;
+    justify-content: space-between;
 }
 
 .CF2 img {
@@ -560,6 +588,13 @@ main>div{
     margin-left: 95px;
     background-color: #D9D9D9;
     border-radius: 13px;
+}
+
+#btn1 {
+    width: 100%;
+    border-radius: 15px;
+    background-color: transparent;
+    border: none;
 }
 
 #dddd1 {
