@@ -3,75 +3,69 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>팝업-menu 수정 </title>
-        <link rel="stylesheet" href="admin-popup-menu-update.css">
+        <title>팝업-event 수정 </title>
+        <link rel="stylesheet" href="admin-popup-event-update.css">
     </head>
     <body>
         <main>
             <section class ="title-container">
-                메뉴 수정
+                이벤트 수정
             </section>
-            <!-- 추가도 동일 -->
 
-            <section class = "update-container">
-                <div class = "update-info-container">
+            <section class = "event-container">
+                <div class = "event-info-container">
                     <table>
                         <tr>
-                            <th> 메뉴 카테고리</th>
+                            <th> 홍보 카테고리</th>
                             <td>
                                 <form>
                                     <select name="menu" >
                                       <option value="none">=== 카테고리 선택 ===</option>
-                                      <option value="popcon">팝콘</option>
-                                      <option value="beverage">음료</option>
-                                      <option value="side">사이드</option>
+                                      <option value="privat-cinema">특별관</option>
+                                      <option value="event">이벤트</option>
                                     </select>
                                   </form>
                             </td>
                         </tr>
 
                         <tr>
-                            <th> 메뉴명</th>
+                            <th> 제목</th>
                             <td>
                                 <input type="text"  autocomplete="off">
                             </td>
                         </tr>
 
                         <tr>
-                            <th> 가격</th>
+                            <th> 내용</th>
                             <td>
-                                <input type="number">
+                                <form>
+                                    <textarea>
+                                        
+                                    </textarea>
+                                </form>
                             </td>
                         </tr>
 
                         <tr>
-                            <th> 메뉴 이미지 </th>
+                            <th> 사진 </th>
                             <td>
                                 <input type="file">
                             </td>
                         </tr>
+
                         <tr>
-                            <th> 판매 영화관</th>
+                            <th> URL </th>
                             <td>
-                                <form>
-                                    <select name="cinema" >
-                                      <option value="none">=== 영화관 선택 ===</option>
-                                      <option value="1">cgv명동</option>
-                                      <option value="2">cgv영등포</option>
-                                      <option value="3">메가박스</option>
-                                    </select>
-                                  </form>
+                                <input type="text">
                             </td>
                         </tr>
-
-
                     </table>
 
 
                 </div>
             </section>
 
-            <section class = "update-btn-container">
+            <section class = "event-btn-container">
                 <div class ="btn">
                     수정하기
                 </div>

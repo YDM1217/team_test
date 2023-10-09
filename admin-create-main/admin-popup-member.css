@@ -81,7 +81,7 @@ td{
     top: 0;
 }
 
-/* .popup-member-write-list-table  tr{
+.popup-member-write-list-table  tr{
     display: flex;
 
 }
@@ -89,7 +89,7 @@ td{
 
 
 .popup-member-comment-no{
-    flex-basis: 20%;
+    flex-basis: 12%;
 
     /* background-color: rebeccapurple; */
     
@@ -99,13 +99,20 @@ td{
 }
 
 .popup-member-comment-content{
-    flex-basis: 30%;
+    flex-basis: 43%;
 
     display: flex;  
     justify-content: center;
     align-items: center;
-} */
+} 
 
+.popup-member-comment-date{
+    flex-basis: 30%;
+}
+
+.popup-member-comment-del-YN{
+    flex-basis: 15%;
+}
 
 
 

@@ -30,24 +30,18 @@ main{
     align-items: center;
 }
 
-.update-container{
-    flex-basis: 70%;
+.event-container{
+    flex-basis: 80%;
 
     display: flex;
 
     padding: 20px;
 }
 
-/* table>tr{
-    padding:20px;
-    border: 2px solid yellow;
-} */
-
-
 
 table td{
     /* border: 2px solid yellow; */
-    padding: 20px;
+    padding: 15px;
 
     font-size: 20px;
 }
@@ -69,11 +63,16 @@ select{
 }
 
 
+textarea{
+    width: 300px;
+    height: 150px;
+    
+    padding:10px;
+}
 
 
 
-
-.update-btn-container{
+.event-btn-container{
 
     flex-basis: 10%;
 

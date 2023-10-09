@@ -29,8 +29,6 @@ main{
 .title-container{
     flex-basis: 20%;
 
-    border: 2px solid yellow;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,13 +51,11 @@ main{
     display: flex;
 
 
-    border: 2px solid rebeccapurple;
 }
 
 
 .menu-container{
     flex : 1;
-    border: 2px solid white;
     
     padding: 30px;
 
@@ -76,8 +72,9 @@ main{
 }
 
 .menu-container-title{
-    flex-basis: 10%;
+    flex-basis: 8%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -86,10 +83,56 @@ main{
     border-radius: 10px 10px 0px 0px;
 }
 
-.menu-info-container{
-    /* flex-basis: 90%; */
+.menu-container-search{
+    flex-basis: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    height: 700px;
+}
+
+fieldset{
+    border: none;
+
+    height: 35px; 
+    border-radius: 5px;
+    margin: 0;
+    padding: 2px;
+    display: flex;
+}
+
+
+#search-input{
+    flex-basis: 92%;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px 0px 0px 5px  ;
+    outline: none;  
+    background-color: white;
+}
+
+#search-btn{
+    flex-basis: 8%;
+    line-height: 32px;
+    font-size: 1.2em;
+    border-radius: 0px 5px 5px 0px   ;
+    border: none;
+    padding: 0px 5px;
+    background-color: white; /* transparent : 투명 */
+    color: black;
+}
+
+
+
+
+
+
+.menu-info-container{
+    /* flex-basis: 70%; */
+
+    height: 580px;
 
     display: flex;
 
