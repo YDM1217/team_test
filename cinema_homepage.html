@@ -54,7 +54,10 @@
         <button onclick="sortKoreanLinks()" style="margin: 10px 0 0 150px;  
             border-radius: 10px;">&nbsp;한글순&nbsp;</button>
 
-         <button  style="margin: 10px 0 0 10px;  
+        <button onclick="sortDistance()" style="margin: 10px 0 0 150px;  
+            border-radius: 10px;">&nbsp;거리순&nbsp;</button>
+
+        <button  style="margin: 10px 0 0 10px;  
             border-radius: 10px;"> &nbsp;시설 만족도&nbsp; </button>
 
         <button  style="margin: 10px 0 0 10px;  
@@ -70,7 +73,7 @@
         <a href="" class="cinema_list" >CGV 영등포</a>
         <a href="" class="cinema_list" >CGV 여의도</a>
         <img src="/homepage_image/옆 스크롤.png" style="width: 29px; height: 30px; margin-left: 10px;
-                cursor: pointer;" alt="">
+                cursor: pointer;">
     </div>
    
     <!--영화 이동 링크-->
@@ -80,7 +83,7 @@
 
     <!--지도-->
     <div class="map_wrap">
-        <div id="map" style=" position:absolute; width:100%; height:100% ; overflow:hidden;"></div>
+        <div id="map" style="position:absolute; width:100%; height:100% ; overflow:hidden;"></div>
 
         <div id="menu_wrap" class="bg_white">
             <div class="option">
@@ -108,7 +111,7 @@
     </div>
 
 
-    <div class="cinema_promotion">
+    <div id="cinema_promotion">
         <div class="event_promotion">
            
             <a href=""  class="preview_img"></a>
