@@ -233,13 +233,17 @@ main>section{
 }
 
 
-.cinema_title>div:nth-child(1){
+.cinema_title a {
 
-    width: 10%;
+
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+
 }
+
+
+
 
 
 
@@ -446,6 +450,7 @@ main>section{
     flex-direction: column;
     width: 1;
     height: 14.7%;
+    overflow: hidden scroll;
 }
 
 .FSL1 {
@@ -577,6 +582,7 @@ input.iii {
     flex-direction: column;
     width: 1;
     height: 14.7%;
+    overflow: hidden scroll;
 }
 
 .FSL1X {
@@ -816,11 +822,13 @@ input.iiiX {
 .comment fieldset{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     border: none;
     color: black;
     height: 100%;
     margin-right: 30%;
+    margin-left: 6%;
+    width: 100%;
 
 }
 
