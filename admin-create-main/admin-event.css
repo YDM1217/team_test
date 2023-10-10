@@ -31,7 +31,6 @@ main{
 .title-container{
     flex-basis: 20%;
 
-    border: 2px solid yellow;
 
     display: flex;
     justify-content: center;
@@ -55,14 +54,11 @@ main{
 
     display: flex;
 
-
-    border: 2px solid rebeccapurple;
 }
 
 
 .event-container{
     flex : 1;
-    border: 2px solid white;
     
     padding: 30px;
 
@@ -99,10 +95,7 @@ main{
     /* border: 2px solid yellow; */
     /* margin-left: auto; */
     /* margin-right: 55px; */
-
-    justify-self: right;
-
-
+    margin-left: 50px;
 }
 
 .event-info-container{
@@ -178,5 +171,22 @@ tr >td:not(:nth-of-type(1)){
 
     flex-basis: 15%;
 
+}
+
+.event-update >div,
+.event-del > div{
+    padding: 7px 20px;
+
+    font-weight: bold;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 10px;
     border: 2px solid black;
+
+    cursor: pointer;
+}
+
+
+.event-del > div{
+    background-color: red;
 }

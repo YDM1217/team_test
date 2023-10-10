@@ -202,13 +202,27 @@ tr >td:not(:nth-of-type(1)){
 
     flex-basis: 15%;
 
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 
+.menu-update >div,
+.menu-del > div{
+    padding: 7px 2px;
+
+    font-weight: bold;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+
+    cursor: pointer;
+}
 
 
-
+.menu-del > div{
+    background-color: red;
+}
 
 
 
