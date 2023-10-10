@@ -44,10 +44,18 @@ body {background-color: #000;  box-sizing: border-box;}
         
         /* 영화이동 링크 */
         .movie_link { width: 23%; height: 50%; margin-top: 50px; border-radius: 10px; position: sticky; top: 300px;
-                      background: url(/homepage_image/44014266-영화-슬레이트.jpg), lightgray 50% / cover no-repeat; }
+                      background: url(../homepage_image/44014266-영화-슬레이트.jpg), lightgray 50% / cover no-repeat; }
         
         /* 맨 위 영화관 리스트 */
-        .cinema_list_container { width: 100%; height: 200px;  display: flex; justify-content: center; align-items: center; }
+        .cinema_list_container { width: 100%; height: 200px;  display: flex; justify-content: center; 
+                                  align-items: center; }
+
+        
+        .cinema_list_container > a {
+            overflow-x: hidden scroll; 
+        }
+
+
 
         .cinema_list { flex-basis: 20%;   height: 152.211px;  flex-shrink: 0; border-radius: 48.436px; border: 0.969px solid #000; 
                         background:#CDD2FF; margin: 10px 10px 20px 10px; font-family: Inter; font-size: 30px; font-style: normal; font-weight: 400;  
@@ -74,21 +82,21 @@ body {background-color: #000;  box-sizing: border-box;}
         .cinema_special{  flex-basis: 45%;    margin: 30px 20px 20px 20px;  color:white;  text-decoration: none;}    
         /*특별관 홍보 이미지 */
         #cinema_special{
-            background: url(/homepage_image/특별관.jpg);  background-size: cover;   background-position: center;
+            background: url(../homepage_image/특별관.jpg);  background-size: cover;   background-position: center;
         }
         
         /* 이벤트 홍보 내부 컨테이너 */
         .event_promotion{ flex-basis: 90%; border-radius: 15px; margin: 50px 0 50px 0; display: flex;
                           background: #D9D9D9; align-items: center; justify-content: space-around;}
         /* 시사회 이미지 */
-        .preview_img{background: url(/homepage_image/시사회img.jpg); background-size: cover; 
+        .preview_img{background: url(../homepage_image/시사회img.jpg); background-size: cover; 
                      background-position: center; flex-basis: 20%; height: 230px; border-radius: 15px;}
 
         /* 시사회,할인행사 정보        */
         .preview_text{flex-basis: 25%; height: 230px; font-weight: bold; line-height: 130%; text-decoration: none; color: #000;}
         
         /* 할인행사 이미지 */
-        .discount_img{background: url(/homepage_image/cgv용산.jfif); background-size: cover; 
+        .discount_img{background: url(../homepage_image/cgv용산.jfif); background-size: cover; 
                       background-position: center; flex-basis: 20%; height: 230px; border-radius: 15px;}
 
 
