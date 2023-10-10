@@ -152,7 +152,6 @@ header>div>div:nth-child(1){
 }
 
 main{
-    border: yellowgreen 2px solid;
 
     margin: 2% 8%;
    
@@ -546,32 +545,27 @@ main>section{
 
 
 #fs1 {
-    font-size: 40px;
+    font-size: 3rem;
     margin-top: 2%;
     margin-left: 6%;
 }
 
 
-#ff5 {
-    margin-left: 50px;
-    margin-top: 33px;
-    color: black;
-    font-size: 15px;
-}
+
 
 #ff6 {
-    margin-left: 100px ;
+    margin-left: 6% ;
     color: black;
-    font-size: 15px;
-    margin-top: 33px;
+    font-size: 1rem;
+    margin-top: 5%;
 }
 
 input.iii {
-    margin-top: 15px;
-    margin-left: 30px;
+    margin-top: 2%;
+    margin-left: 5%;
     padding: 0;
     margin-right: 0;
-    width: 300px;
+    width: 30%;
     background: none; /* 배경 제거 */
     border: none; /* 테두리 제거 */
     outline: none; /* 포커스 효과 제거 (선택 사항) */
@@ -685,7 +679,7 @@ input.iii {
 }
 
 #fs1X {
-    font-size: 40px;
+    font-size: 3rem;
     margin-top: 2%;
     margin-left: 6%;
 }
@@ -695,23 +689,19 @@ input.iii {
 }
 
 
-#ff6X {
-    margin-left: 100px ;
-    color: black;
-    font-size: 15px;
-    margin-top: 33px;
-}
+
 
 input.iiiX {
     margin-top: 2%;
-    margin-left: 2%;
+    margin-left: 5%;
     padding: 0;
     margin-right: 0;
-    width: 300px;
+    width: 30%;
     background: none; /* 배경 제거 */
     border: none; /* 테두리 제거 */
     outline: none; /* 포커스 효과 제거 (선택 사항) */
 }
+
 
 
 
@@ -738,7 +728,7 @@ input.iiiX {
     /* 메뉴 제목 */
     
     height: 10%;
-    font-size: 48.4px;
+    font-size: 3rem;
     font-weight: bold;
     padding-top: 1%;
     padding-left: 5%;
@@ -787,7 +777,7 @@ input.iiiX {
 .recommended_menu>div:nth-child(2)>div>div:nth-child(1){
     /* 메뉴 음식 줄 제목 칸 */
 
-    font-size: 40px;
+    font-size: 2rem;
 
 
 
@@ -830,7 +820,7 @@ input.iiiX {
     border: none;
     color: black;
     height: 100%;
-    margin-right: 300px;
+    margin-right: 30%;
 
 }
 
@@ -879,7 +869,7 @@ input.iiiX {
 
 .comment fieldset form label {
    
-    margin-right: 10px;
+    margin-right: 1%;
 }
 
 
@@ -888,7 +878,7 @@ input.iiiX {
 /* 메뉴선택과 평점선택 사이 띄우기 */
 .comment fieldset form label[for="rating"] {
    
-    margin-left: 50px;
+    margin-left: 10%;
 }
 
 
