@@ -474,9 +474,35 @@ main>div{
     margin-left: 20px;
 }
 
+.cb1 {
+ margin: 0;
+}
+
+.cb2 {
+ margin: 0;
+}
+
+.cb3 {
+ margin: 0;
+}
+
+.cb4 {
+ margin: 0;
+}
+
+#idd {
+    margin-left: 50%;
+    margin-top: 18%;
+    padding: 0;
+    font-weight: normal;
+}
+
+
+
 #dd1 {
-    margin-left: 80px;
+    margin-left: 1%;
     margin-top: 20px;
+    width: 40%;
     padding: 0;
     font-weight: normal;
 }
@@ -486,6 +512,14 @@ main>div{
     width: auto;
     padding: 0;
     display: flex;
+}
+
+.cb1 {
+    flex-basis: 5%;
+}
+
+.cb1-1 {
+    flex-basis: 95%;
 }
 
 .comb3 {
@@ -498,17 +532,20 @@ main>div{
     margin-top: 33px;
 }
 
-#dd2 {
-    margin-left: 80px;
-    margin-top: 25px;
-    padding: 0;
-    font-weight: normal;
-}
 
 .comb4 {
     height: 80px;
     display: flex;
 }
+
+.cb2 {
+    flex-basis: 5%;
+}
+
+.cb2-1 {
+    flex-basis: 95%;
+}
+
 
 .comb5 {
     height: 80px;
@@ -519,6 +556,15 @@ main>div{
     height: 80px;
     display: flex;
 }
+
+.cb3 {
+    flex-basis: 5%;
+}
+
+.cb3-1 {
+    flex-basis: 95%;
+}
+
 
 .comb5 img {
     width: 33px;
