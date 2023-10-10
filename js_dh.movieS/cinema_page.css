@@ -233,7 +233,7 @@ main>section{
 }
 
 
-.cinema_title a {
+.cinema_title>div:nth-child(1) {
 
 
     display: flex;
@@ -928,3 +928,5 @@ input.iiiX {
     -webkit-text-fill-color: #fff58c;
   }
   
+
+
