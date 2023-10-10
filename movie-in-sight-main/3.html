@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자동 슬라이더</title>
+    <style>
+        .slider-container {
+            width: 500px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide"><img src="2.png" alt="이미지 1"></div>
+            <div class="slide"><img src="3.png" alt="이미지 2"></div>
+            <div class="slide"><img src="4.png" alt="이미지 3"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const slider = document.querySelector(".slider");
+            const slides = document.querySelectorAll(".slide");
+
+            let currentIndex = 0;
+
+            function showSlide(index) {
+                slider.style.transform = `translateX(-${index * 100}%)`;
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                showSlide(currentIndex);
+            }
+
+            setInterval(nextSlide, 2000); // 2초마다 슬라이드 전환
+        });
+    </script>
+</body>
+
+</html>
