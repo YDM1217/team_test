@@ -444,19 +444,20 @@ main>div{
 }
 
 .comhead {
-    height: 145px;
+    height: 13%;
     width: auto;
     background-color: #383B3E;
 }
 
 #comment {
-  font-size: 50px;
-  margin-top: 1%;
-  margin-left: 10%;
+  font-size: 60px;
+  margin: 0;
+  margin-left: 5%;
+  
 }
 
 .combody {
-    height: 510px;
+    height: 82%;
     width: auto;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -625,7 +626,7 @@ main>div{
 }
 
 .comfoot {
-    height: 145px;
+    height: 16%;
     width: auto;
     display: flex;
 }
@@ -716,7 +717,7 @@ main>div{
 
 .foot {
     margin-top: 70px;
-    height: 550px;
+    height: 15%;
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -729,52 +730,87 @@ main>div{
 
 .ftHead {
     display: flex;
-    height: 30%;
+    height: 25%;
+    width: 100%;
+    border: 1px solid white;
+}
+
+.ftMain {
+    border: 1px solid white;
+    display: flex;
+    height: 85%;
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
 }
 
 .ftmain {
+    border: 1px solid white;
     display: flex;
     justify-content: space-between;
-    height: 70%;
-    padding: 80px;
+    height: 90%;
+    padding: 2%;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-color: gray transparent;
+
+}
+
+.ftmain::-webkit-scrollbar-thumb {
+    background-color: gray; /* 원하는 색상으로 변경 */
+}
+
+.ftmain > div {
+    margin-right: 4%; /* 이미지 간격 설정 */
 }
 
 #hi {
     color: white;
-    margin-left: 60px;
+    margin-left: 5%;
     margin-bottom: 0;
-    margin-top: 100px;
+    margin-top: 1.5%;
+    font-size: 30px;
 }
 
 .ft1 {
-    width: auto;
+    border: 1px solid white;
+    width: 460px;
 }
 
 .ft1 img {
+    margin-top: 0;
     height: 220px;
 }
 
 .ft2 {
-    width: auto;
+    border: 1px solid white;
+    width: 460px;
 }
 
 .ft2 img {
+    margin-top: 0;
     height: 220px;
 }
 
 .ft3 {
-    width: auto;
+    border: 1px solid white;
+    width: 460px;
 }
 
 .ft3 img {
+    margin-top: 0;
     height: 220px;
 }
 
 .ft4 {
-    width: auto;
+    border: 1px solid white;
+    width: 460px;
 }
 
 .ft4 img {
+    margin-top: 0;
     height: 220px;
 }
+
 
