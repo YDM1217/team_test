@@ -1,32 +1,57 @@
-// 폼 요소와 이벤트 리스너 추가
 document.addEventListener("DOMContentLoaded", function () {
-    const menuForm = document.getElementById("menuForm");
-
-    menuForm.addEventListener("submit", function (event) {
-        event.preventDefault(); // 기본 폼 제출 동작을 막음
-
-        // 선택한 메뉴 및 평점 가져오기
-        const menu = document.getElementById("menu").value;
-        const rating = document.getElementById("rating").value;
-
-        // 데이터베이스로 데이터 전송 (여기서는 가정)
-        sendDataToDatabase(menu, rating);
-
-        // 성공 메시지 표시
-        alert("평점이 등록되었습니다.");
-
-        // 폼 재설정
-        menuForm.reset();
+    const thumbs = document.querySelectorAll('.fa-thumbs-up');
+  
+    thumbs.forEach((thumb, index) => {
+        thumb.addEventListener('click', () => {
+            if (thumb.classList.contains('far')) {
+                thumb.classList.remove('far');
+                thumb.classList.add('fas');
+                thumb.style.color = 'blue'; // 따봉 색 변경 (예: 파란색)
+  
+                // 왼쪽 따봉을 클릭하면, 왼쪽에 있는 따봉만 채움
+                for (let i = 0; i < index; i++) {
+                    thumbs[i].classList.remove('far');
+                    thumbs[i].classList.add('fas');
+                    thumbs[i].style.color = 'blue'; // 왼쪽 따봉 색을 채움 (예: 파란색)
+                }
+            } else {
+                thumb.classList.remove('fas');
+                thumb.classList.add('far');
+                thumb.style.color = ''; // 따봉 색 제거
+  
+                // 오른쪽 따봉을 클릭하면, 해당 따봉 위치부터 끝까지 리셋
+                for (let i = index + 1; i < thumbs.length; i++) {
+                    thumbs[i].classList.remove('fas');
+                    thumbs[i].classList.add('far');
+                    thumbs[i].style.color = ''; // 오른쪽 따봉 색을 제거
+                }
+            }
+        });
     });
-});
-
-// 데이터베이스로 데이터 전송하는 함수 (가정)
-function sendDataToDatabase(menu, rating) {
-    // 여기서는 데이터베이스로의 전송을 시뮬레이션하며 실제 데이터베이스와 연동하는 코드는 필요에 따라 작성해야 합니다.
-    console.log("메뉴:", menu);
-    console.log("평점:", rating);
-
-    // 여기에서 실제 데이터베이스로 데이터를 보내는 코드를 작성합니다.
-}
-
-
+  });
+  
+  const star = document.getElementById("star");
+  let clicked = false;
+  
+  star.addEventListener("click", function () {
+      if (clicked) {
+          star.style.color = 'white'; // 클릭 후 다시 하얀색으로 변경
+      } else {
+          star.style.color = 'purple'; // 클릭 시 색상을 보라색으로 변경
+      }
+      clicked = !clicked;
+  });
+  
+  star.addEventListener("mouseenter", function () {
+      if (!clicked) {
+          star.style.color = 'blue'; // 마우스를 올렸을 때 파란색으로 변경
+      } else {
+          star.style.color = 'purple'; // 클릭한 상태에서 마우스를 올렸을 때 보라색으로 변경
+      }
+  });
+  
+  star.addEventListener("mouseleave", function () {
+      if (!clicked) {
+          star.style.color = 'white'; // 마우스를 내렸을 때 다시 하얀색으로 변경
+      }
+  });
