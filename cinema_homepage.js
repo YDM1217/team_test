@@ -314,7 +314,21 @@ function sortKoreanLinks() {
 
 // ==================================================//
 
+new Swiper(".main-1", {
+    slidesPerView: "auto",
+    spaceBetween: 24,
+    loop: false,
+    loopedSlidesLimit: false,
+    slideToClickedSlide: false,
+    loopedSlides: 1,
+    navigation: {
+      nextEl: ".main-1-n", // 다음 버튼 클래스명
+      prevEl: ".main-1-p", // 이번 버튼 클래스명
+    },
+  });
 
+
+  
 
 
 

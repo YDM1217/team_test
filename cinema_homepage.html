@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>영화관 검색 홈페이지</title>
     <link rel="stylesheet" href="css/cinema_homepage.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 
 
@@ -51,7 +57,7 @@
 
     <div id="sortButton">
 
-        <button onclick="sortKoreanLinks()" style="margin: 10px 0 0 150px;  
+        <button onclick="sortKoreanLinks()" style="margin: 50px 0 0 100px;  
             border-radius: 10px;">&nbsp;한글순&nbsp;</button>
 
         <button onclick="sortDistance()" style="margin: 10px 0 0 10px;  
@@ -68,18 +74,64 @@
 
     <div class="cinema_list_container">
 
-        <a href="" class="cinema_list" >CGV 용산</a>
-        <a href="" class="cinema_list" >CGV 왕십리</a>
-        <a href="" class="cinema_list" >CGV 영등포</a>
-        <a href="" class="cinema_list" >CGV 여의도</a>
-        <a href="" class="cinema_list" >CGV 여의도</a>
-        <a href="" class="cinema_list" >CGV 여의도</a>
-        <a href="" class="cinema_list" >CGV 여의도</a>
-        <a href="" class="cinema_list" >CGV 여의도</a>
-        <a href="" class="cinema_list" >CGV 여의도</a>
-        
-        <img src="homepage_image/옆 스크롤.png" style="width: 29px; height: 30px; margin-left: 10px;
-                cursor: pointer;">
+       
+
+        <section class="cinema_list swiper main-1">
+
+                
+            <ul class="swiper-wrapper">
+
+                <li class="cinema_item swiper-slide">
+                    <a href="">1번 영화관</a>
+                </li>
+
+                <li class="cinema_item swiper-slide">
+                    <a href="">2번 영화관</a>
+                </li>
+
+                <li class="cinema_item swiper-slide">
+                    <a href="">3번 영화관</a>
+                </li>
+
+                <li class="cinema_item swiper-slide">
+                    <a href="">4번 영화관</a>
+                </li>
+
+                
+                <li class="cinema_item swiper-slide">
+                    <a href="">5번 영화관</a>
+                </li>
+
+                <li class="cinema_item swiper-slide">
+                    <a href="">6번 영화관</a>
+                </li>
+
+                <li class="cinema_item swiper-slide">
+                    <a href="">7번 영화관</a>
+                </li>
+
+
+                <li class="cinema_item swiper-slide">
+                    <a href="">8번 영화관</a>
+                </li>
+
+
+                <li class="cinema_item swiper-slide">
+                    <a href="">9번 영화관</a>
+                </li>
+
+
+                <li class="cinema_item swiper-slide">
+                    <a href="">10번 영화관</a>
+                </li>
+            
+            </ul>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev main-1-p"></div>
+            <div class="swiper-button-next main-1-n"></div>
+        </section>
+
     </div>
    
     <!--영화 이동 링크-->
@@ -147,7 +199,7 @@
         </div>
     </div>
 
-   
+    
 
 </body>
 
