@@ -658,6 +658,17 @@ main>div{
     justify-content: space-between;
 }
 
+.fa-thumbs-up {
+    color: white;
+    font-size: 50px;
+    margin-left: 10%;
+    margin-top: 13%;
+}
+
+.fa-thumbs-up:hover {
+    color: #742AD2;
+}
+
 .CF2 img {
     height: 48px;
     width: 33px;
