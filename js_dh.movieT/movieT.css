@@ -193,12 +193,21 @@ main>div{
     height: 20%;
 }
 
-.star {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#star {
+    color: white; 
+    transition: color 0.3s; 
+    font-size: 50px;
+    margin-top: 43%;
+    margin-left: 25%;
 }
 
+#star:hover {
+    color: blue;
+}
+
+.star-clicked {
+    color: purple;
+}
 
 .movie_title>div:nth-child(1){
     width: 10%;

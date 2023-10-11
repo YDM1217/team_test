@@ -30,4 +30,28 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+const star = document.getElementById("star");
+let clicked = false;
 
+star.addEventListener("click", function () {
+    if (clicked) {
+        star.style.color = 'white'; // 클릭 후 다시 하얀색으로 변경
+    } else {
+        star.style.color = 'purple'; // 클릭 시 색상을 보라색으로 변경
+    }
+    clicked = !clicked;
+});
+
+star.addEventListener("mouseenter", function () {
+    if (!clicked) {
+        star.style.color = 'blue'; // 마우스를 올렸을 때 파란색으로 변경
+    } else {
+        star.style.color = 'purple'; // 클릭한 상태에서 마우스를 올렸을 때 보라색으로 변경
+    }
+});
+
+star.addEventListener("mouseleave", function () {
+    if (!clicked) {
+        star.style.color = 'white'; // 마우스를 내렸을 때 다시 하얀색으로 변경
+    }
+});
