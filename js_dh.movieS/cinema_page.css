@@ -224,7 +224,7 @@ main>section{
 #star {
     color: white; 
     transition: color 0.3s; 
-    font-size: 50px;
+    font-size: 3.5rem;
     align-items: center;
     justify-content: center;
    
@@ -242,7 +242,7 @@ main>section{
     align-items: center;
     justify-content: center;
     display: flex;
-    padding-right: 5%;
+    margin-right: 2%;
 }
 
 
@@ -252,30 +252,29 @@ main>section{
 
 .cinema_title>div:nth-child(2){
 
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
 
 .cinema_title>div:nth-child(3){
 
-    width: 40%;
+    width: 30%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 .cinema_title>div:nth-child(3)>div{
 
+    margin-left: 3.5%;
 
-    flex: 1;
-    background-image: url(img/pop.png);
-    background-repeat: no-repeat;/* 배경 이미지 1개 */
-    background-position: center;
 }
 
 
@@ -689,6 +688,7 @@ table{
 #facilityForm>div:nth-child(1){
 
     flex-basis: 60%;
+
   
 }
 
@@ -696,6 +696,7 @@ table{
 
     flex-basis: 5%;
     font-size: 0.9rem;
+
   
 }
 
@@ -714,9 +715,9 @@ table{
 }
 
 .fa-thumbs-up {
-    color: black;
+
     font-size: 3rem;
-    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 2%;
 
    
@@ -726,12 +727,6 @@ table{
     color: #742AD2;
 }
 
-.CF2 img {
-    height: 48px;
-    width: 33px;
-    margin-top: 50px;
-    margin-left: 30px;
-}
 
 
 
@@ -862,7 +857,7 @@ table{
     border: none;
     color: black;
     height: 100%;
-    margin-right: 30%;
+   
     margin-left: 6%;
     width: 100%;
 
@@ -922,3 +917,21 @@ table{
 
 
 
+
+
+#correction{
+
+    display: flex;
+    justify-content: center;
+    height: 2%;
+    
+
+}
+
+#correction button{
+
+    width: 60%;
+    height: 100%;
+    font-size: 3rem;
+
+}
