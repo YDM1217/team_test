@@ -302,7 +302,7 @@ main>div{
     flex-direction: column;
     background-color: #383B3E;
     padding: auto;
-    height: 650px;
+    height: 20%;
     margin-top: 0%;
 }
 
@@ -437,7 +437,7 @@ main>div{
 .comment{
     height: 800px;
     background-color: #383B3E;
-    margin: 70px 0px;
+    margin-top: 1%;
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -716,8 +716,8 @@ main>div{
 }
 
 .foot {
-    margin-top: 70px;
-    height: 15%;
+    margin-top: 1%;
+    height: 13%;
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -732,11 +732,9 @@ main>div{
     display: flex;
     height: 25%;
     width: 100%;
-    border: 1px solid white;
 }
 
 .ftMain {
-    border: 1px solid white;
     display: flex;
     height: 85%;
     width: 100%;
@@ -745,7 +743,6 @@ main>div{
 }
 
 .ftmain {
-    border: 1px solid white;
     display: flex;
     justify-content: space-between;
     height: 90%;
@@ -774,43 +771,57 @@ main>div{
 }
 
 .ft1 {
-    border: 1px solid white;
-    width: 460px;
+    height: 220px;
 }
 
 .ft1 img {
     margin-top: 0;
     height: 220px;
+    width: 330px;
+    border-radius: 15%;
 }
 
 .ft2 {
-    border: 1px solid white;
-    width: 460px;
+    height: 220px;
 }
 
 .ft2 img {
     margin-top: 0;
     height: 220px;
+    width: 330px;
+    border-radius: 15%;
 }
 
 .ft3 {
-    border: 1px solid white;
-    width: 460px;
+    height: 220px;
 }
 
 .ft3 img {
     margin-top: 0;
     height: 220px;
+    width: 330px;
+    border-radius: 15%;
 }
 
 .ft4 {
-    border: 1px solid white;
-    width: 460px;
+    height: 220px;
 }
 
 .ft4 img {
     margin-top: 0;
     height: 220px;
+    width: 330px;
+    border-radius: 15%;
 }
 
+.ft5 {
+    height: 220px;
+}
+
+.ft5 img {
+    margin-top: 0;
+    height: 220px;
+    width: 330px;
+    border-radius: 15%;
+}
 
