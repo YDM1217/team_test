@@ -1,0 +1,424 @@
+* {
+    box-sizing: border-box;
+
+}
+
+
+body{
+    height: 1920px;
+    width: 1080px;
+
+}
+
+
+
+
+/* 삭제 확인팝업*/
+
+#delete_popup{
+
+    width: 30%;
+    height: 10%;
+    background-color: #250055;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 30px 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+
+
+#delete_popup div:nth-child(1){
+
+    height: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+
+}
+
+
+
+
+#delete_popup div:nth-child(2){
+
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+   
+}
+
+
+
+#delete_popup button{
+    border-radius: 50px 50px;
+    width: 30%;
+    height: 60%;
+   margin: 5% 5%;
+   background-color: #E7E7FC;
+   border: none;
+   font-weight: 900;
+   font-size: 1.1rem;
+}
+
+
+/* ////////////////////////////////////////////////////////////// */
+
+/* 즐겨찾기 취소팝업 */
+
+#favorites_popup{
+
+    width: 30%;
+    height: 10%;
+    background-color: #250055;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 30px 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+
+
+#favorites_popup div:nth-child(1){
+
+    height: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+
+}
+
+
+
+
+#favorites_popup div:nth-child(2){
+
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+   
+}
+
+
+
+#favorites_popup button{
+    border-radius: 20px 20px;
+    width: 60%;
+    height: 60%;
+   margin: 5% 5%;
+   background-color: #E7E7FC;
+   border: none;
+   font-weight: 900;
+   font-size: 1.1rem;
+ 
+}
+
+
+/* ////////////////////////////////////////////////////////////// */
+
+
+
+/* 삭제 완료팝업 */
+
+
+#delete_com{
+
+    width: 20%;
+    height: 4%;
+    background-color: #250055;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 30px 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+
+
+#delete_com div{
+
+
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+#delete_com button{
+    border-radius: 50px 50px;
+    width: 30%;
+    height: 60%;
+   margin: 5% 5%;
+   background-color: #E7E7FC;
+   border: none;
+   font-weight: 900;
+}
+
+
+/* /////////////////////////////////////////////////////////////// */
+
+/* 회원 탈퇴팝업 */
+
+#secession_popup{
+
+    width: 30%;
+    height: 10%;
+    background-color: #ED5A5A;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 30px 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+
+
+#secession_popup div:nth-child(1){
+
+    height: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+
+}
+
+
+
+
+#secession_popup div:nth-child(2){
+
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+   
+}
+
+
+
+#secession_popup button{
+    border-radius: 50px 50px;
+    width: 30%;
+    height: 60%;
+   margin: 5% 5%;
+   background-color: #E7E7FC;
+   border: none;
+   font-weight: 900;
+   font-size: 1.1rem;
+}
+
+/* ///////////////////////////////////////////////////// */
+
+
+/* 탈퇴 완료팝업 */
+
+
+#secession_com{
+
+    width: 30%;
+    height: 10%;
+    background-color: #ED5A5A;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 30px 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+
+
+#secession_com div:nth-child(1){
+
+    height: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+
+}
+
+
+
+
+#secession_com div:nth-child(2){
+
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+   
+}
+
+
+
+#secession_com button{
+    border-radius: 50px 50px;
+    width: 60%;
+    height: 60%;
+   margin: 5% 5%;
+   background-color: #E7E7FC;
+   border: none;
+   font-weight: 900;
+   font-size: 1.1rem;
+ 
+}
+
+
+/* ///////////////////////////////////////////////////////////////// */
+
+
+/* 회원확인 팝업(로그인 안 경우) */
+
+
+#memberck_popup{
+
+    width: 30%;
+    height: 10%;
+    background-color: #b3c275;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 30px 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+
+
+#memberck_popup div:nth-child(1){
+
+    height: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+
+}
+
+
+
+
+#memberck_popup div:nth-child(2){
+
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+   
+}
+
+
+
+#memberck_popup button{
+    border-radius: 50px 50px;
+    width: 30%;
+    height: 60%;
+   margin: 5% 5%;
+   background-color: #E7E7FC;
+   border: none;
+   font-weight: 900;
+   font-size: 1.1rem;
+}
+
+
+/* ///////////////////////////////////////////////////////// */
+
+/* 회원 가입 성공팝업 */
+
+
+#membercom_popup{
+
+    width: 30%;
+    height: 10%;
+    background-color: #937CB0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border-radius: 30px 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+
+}
+
+
+
+#membercom_popup div:nth-child(1){
+
+    height: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+    text-align: center;
+
+}
+
+
+
+
+#membercom_popup div:nth-child(2){
+
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+   
+}
+
+
+
+#membercom_popup button{
+    border-radius: 20px 20px;
+    width: 60%;
+    height: 60%;
+   margin: 5% 5%;
+   background-color: #E7E7FC;
+   border: none;
+   font-weight: 900;
+   font-size: 1.1rem;
+ 
+}
