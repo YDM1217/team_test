@@ -307,7 +307,15 @@ main>div{
 }
 
 .mp2Head {
-    height: 115px;
+    height: 15%;
+}
+
+.mmcon {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #474C50;
 }
 
 .line1 {
@@ -716,6 +724,7 @@ main>div{
 }
 
 .foot {
+    border-radius: 20px;
     margin-top: 1%;
     height: 13%;
     display: flex;
@@ -751,6 +760,7 @@ main>div{
     overflow-x: scroll;
     overflow-y: hidden;
     scrollbar-color: gray transparent;
+    background-color: #474C50;
 
 }
 
