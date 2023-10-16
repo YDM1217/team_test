@@ -12,8 +12,9 @@
 
         <nav>
             <section class = "logo">
-                <!-- ① 로고 이미지? 및 버튼으로 변경  -->
-                <a>MovieInSight</a>
+                <a>
+                    <img src="logo.png"> <!-- 주소 변경 -->
+                </a>
             </section>
             
             <section class = "movie-search-area">
@@ -27,26 +28,31 @@
 
                 <div class = "main-sort">
                     <!-- ③ a 태그 입력하기 진행하기! main페이지로 이동할 수 있게  -->
-                    <a>#인기순</a>
-                    <a>#최신순</a>
-                    <a>#장르별</a>
+                    <a href ="#">#인기순</a>
+                    <a href ="#">#최신순</a>
+                    <a href ="#">#장르별</a>
                 </div>
             </section>
 
             <section class = "user-function">
                 <!-- ④ a 태그로 만들기! -->
                 <a class = "user-login">
-                    <!-- <a>LOGIN</a> -->
-                    LOGIN
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <span>LOGIN</span>
+                </a>
+
+                <a class = "user-logout" style="display: none;">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>LOGOUT</span>
                 </a>
 
                     <!-- ⑤ 버튼으로 만들어야 하나? -->
-                <div class = "user-mypage">
+                <a class = "user-mypage">
                     <div class = "mypage-wrapper">
                         <!-- ⑥이거 나중에 유저 사진으로 변경하기 -->
-                        <a class="fa-solid fa-user"></a>
+                        <i class="fa-solid fa-user"></i>
                     </div>
-                </div>
+                </a>
             </section>
         </nav>
 
