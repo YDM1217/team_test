@@ -37,7 +37,7 @@ body {
 
 .admin-menu li {
 
-    margin-bottom: 50%;
+    margin-bottom: 80%;
     padding: 10px;
     text-align: center;
     font-weight: bold;
@@ -105,7 +105,7 @@ body {
 .cinema-item {
    
     width: 95%;
-    height: 50px;
+    height: 10%;
     border-radius: 7px;
     background-color: gray;
     padding: 10px;
@@ -114,6 +114,14 @@ body {
     justify-content: space-between;
     text-align: center;
 }
+
+.cinema-title {
+
+
+    
+}
+
+
 
 .cinema-buttons {
 
