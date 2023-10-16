@@ -333,7 +333,7 @@ main>section{
 
 .screening_movie{
 
-    height: 22%
+    height: 17%
 
 }
 
@@ -343,12 +343,12 @@ main>section{
 
     /* 제목 칸*/
 
-    height: 10%;
+    height: 12%;
     font-size: 3rem;
     font-weight: bold;
     display: flex;
     align-items: center;
-    padding-left: 5%;
+    padding-left: 6%;
 
 }
 
@@ -358,7 +358,7 @@ main>section{
 
     /*영화 칸  */
 
-    height: 90%;
+    height: 88%;
     display: flex;
     flex-direction: column;
     padding-right: 5%;
@@ -507,19 +507,20 @@ main>section{
     display: flex;
     flex-direction: column;
     width: 1;
-    height: 14.7%;
+    height: 16%;
     background-color: #383B3E;
 }
 
 
 .facility .block{
  
-    flex-basis: 80%;
-    height: 80%;
-   
+  height: 80%;
+
 
 
 }
+
+
 
 .block_name{
     /* 제목 */
@@ -529,7 +530,7 @@ main>section{
     justify-content: flex-start;
     align-items: center;
     margin-left: 6%;
-    height: 20%;
+    height: 18%;
 
     
 }
@@ -546,9 +547,8 @@ main>section{
     /* 댓글들 */
     display: flex;
     flex-direction: column;
-    padding-left: 6%;
     height: 80%;
-    overflow: hidden scroll;
+ 
     background-color: #474C50;
   
 
@@ -557,91 +557,165 @@ main>section{
 
 
 
-
-
-.comments{
-  
-    height: 30%;
-  
-
-
-}
-
-
-
-.facility .score  {
-
-    /* 평점 줄 */
-    display: flex;
-    width: 20%;
-    height: 50%;
-
-  
- 
- }
-
-
-
- .facility .score td {
-    
-
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10%;
-
-    
-
-}
-
-
-.score img{
-
-    height: 80%;
+.combody {
+    height: 100%;
     width: auto;
-
-
-}
-
-.facility .comments_detail{
-
-    height: 60%;
-   
-
-   
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #474C50;
+    overflow: hidden scroll;
 }
 
 
+.comb {
+    height: 90.5px;
+    width: auto;
+    display: flex;
+}
 
+.comb img {
+    margin-top: 2.5%;
+    width: 33px;
+}
 
-.facility .comments_detail .comments_id {
+#pop1 {
+   margin-left: 5%; 
+}
 
-    
-    width: 20%;
+#pop2 {
+    margin-left: 20px;
+}
 
+.cb1 {
+ margin: 0;
+}
 
-   
+.cb2 {
+ margin: 0;
+}
+
+.cb3 {
+ margin: 0;
+}
+
+.cb4 {
+ margin: 0;
+}
+
+#idd {
+    margin-left: 50%;
+    margin-top: 18%;
+    padding: 0;
+    font-weight: normal;
 }
 
 
 
-.facility .comments_detail .comments_contents {
-
-    
+#dd1 {
+    margin-left: 1%;
+    margin-top: 20px;
+    margin-right: 0;
     width: 80%;
+    padding: 0;
+    font-weight: normal;
+}
 
+.comb2 {
+    height: 72.5px;
+    width: auto;
+    padding: 0;
+    display: flex;
+}
 
-   
+.cb1 {
+    flex-basis: 5%;
+    padding: 0;
+}
+
+.cb1-1 {
+    flex-basis: 55%;
+    padding: 0;
+}
+
+.cb1-2 {
+    flex-basis: 40%;
+    padding: 0;
+}
+
+.comb3 {
+    height: 80px;
+    display: flex;
 }
 
 
+.comb4 {
+    height: 80px;
+    display: flex;
+}
 
-table{
-    margin-bottom: 8%;
+.cb2 {
+    flex-basis: 5%;
+}
+
+.cb2-1 {
+    flex-basis: 55%;
+    padding: 0;
+}
+
+.cb2-2 {
+    flex-basis: 40%;
+    padding: 0;
 }
 
 
+.comb5 {
+    height: 80px;
+    display: flex;
+}
+
+.comb6 {
+    height: 80px;
+    display: flex;
+}
+
+.cb3 {
+    flex-basis: 5%;
+}
+
+.cb3-1 {
+    flex-basis: 55%;
+    padding: 0;
+}
+
+.cb3-2 {
+    flex-basis: 40%;
+    padding: 0;
+}
+
+.editBtn {
+    margin-left: 58%;
+    margin-top: 2%;
+    background-color: #383B3E;
+    color: rgb(195, 195, 250);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    margin-right: 10px;
+}
+
+.deletBtn {
+    margin-top: 2%;
+    background-color: #383B3E;
+    color: rgb(170, 170, 248);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    margin-right: 10px;
+}
 
 
 
@@ -661,7 +735,7 @@ table{
 
     /* 평가 입력창 */
 
-    flex-basis: 20%;
+    flex-basis: 18%;
     display: flex;
     align-items: center;
     color: black;
@@ -680,6 +754,7 @@ table{
     align-items: center;
     background-color: white;
     border-radius: 20px;
+
 
     
 
@@ -749,7 +824,7 @@ table{
 
 .recommended_menu{
 
-    height: 25.5%;
+    height: 16%;
 
 }
 
@@ -759,7 +834,7 @@ table{
 .recommended_menu>div:nth-child(1){
     /* 메뉴 제목 */
     
-    height: 10%;
+    height: 13%;
     font-size: 3rem;
     font-weight: bold;
     display: flex;
@@ -773,12 +848,19 @@ table{
 
 
 
+.recommended_menu img{
+
+    width: 60%;
+    height: 80%;
+
+}
+
 
 
 .recommended_menu>div:nth-child(2){
     /* 메뉴 칸 */
     
-    height: 80%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     background-color: #474C50;
@@ -839,13 +921,13 @@ table{
 
 
 
-
 /* 댓글 */
 
 
 .comment{
 
-    height: 10%;
+    height: 15%;
+    display: flex;
 
 
 }
@@ -857,7 +939,6 @@ table{
     border: none;
     color: black;
     height: 100%;
-   
     margin-left: 6%;
     width: 100%;
 
@@ -871,7 +952,7 @@ table{
     align-items: center;
     justify-content: center;
     background-color: white;
-    width: 55%;
+    width: 58%;
     height: 80%;
     border-radius: 20px;
     
@@ -906,6 +987,7 @@ table{
     width: 100px;
     height: 100px;
     border: 0px;
+    margin-left: 5%;
  
 
 
