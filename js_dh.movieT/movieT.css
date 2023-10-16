@@ -752,15 +752,11 @@ main>div{
 }
 
 .ftmain {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
     height: 90%;
     padding: 2%;
     width: 100%;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scrollbar-color: gray transparent;
-    background-color: #474C50;
 
 }
 
@@ -768,8 +764,45 @@ main>div{
     background-color: gray; /* 원하는 색상으로 변경 */
 }
 
-.ftmain > div {
+.gallery > div {
     margin-right: 4%; /* 이미지 간격 설정 */
+}
+
+.gallery-container {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.gallery {
+    display: flex;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 110px;
+  cursor: pointer;
+  color: skyblue;
+  border-radius: 50%;
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
 }
 
 #hi {
