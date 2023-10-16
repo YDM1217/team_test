@@ -55,3 +55,25 @@ star.addEventListener("mouseleave", function () {
         star.style.color = 'white'; // 마우스를 내렸을 때 다시 하얀색으로 변경
     }
 });
+
+const gallery = document.querySelector('.gallery');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+
+let scrollPosition = 0;
+
+nextButton.addEventListener('click', () => {
+  scrollPosition += gallery.clientWidth;
+  if (scrollPosition > gallery.scrollWidth - gallery.clientWidth) {
+    scrollPosition = gallery.scrollWidth - gallery.clientWidth;
+  }
+  gallery.style.transform = `translateX(-${scrollPosition}px)`;
+});
+
+prevButton.addEventListener('click', () => {
+  scrollPosition -= gallery.clientWidth;
+  if (scrollPosition < 0) {
+    scrollPosition = 0;
+  }
+  gallery.style.transform = `translateX(-${scrollPosition}px)`;
+});
