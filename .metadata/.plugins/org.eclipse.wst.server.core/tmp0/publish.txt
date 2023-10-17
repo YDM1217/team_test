@@ -1,0 +1,7 @@
+#Tomcat publish data
+<<<<<<< HEAD
+#Mon Oct 16 17:24:16 KST 2023
+=======
+#Tue Oct 17 12:36:51 KST 2023
+>>>>>>> 27355bd62b7cff94fe55ea8c1921a00b49d937cb
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\user1\\.m2\\repository\\org\\springframework\\spring-web\\5.3.20\\spring-web-5.3.20.jar=WEB-INF/lib/spring-web-5.3.20.jar

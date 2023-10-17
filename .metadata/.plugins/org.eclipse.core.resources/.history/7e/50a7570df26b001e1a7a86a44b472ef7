@@ -1,0 +1,5 @@
+package semi.project.movieInsight.cinema.dto.copy;
+
+public class Movie {
+
+}
