@@ -1,0 +1,5 @@
+package semi.project.movieInsight.movie;
+
+public class MovieController {
+
+}

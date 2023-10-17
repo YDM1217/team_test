@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <style>
+
+      *{
+        box-sizing: border-box;
+      }
+
+      body {
+        /* width: 100%; */
+        margin: 0;
+        padding: 100px;
+        font-family: Pretendard;
+        background-color: rgb(11, 0, 25);
+        display: grid;
+        justify-content: center;
+        gap: 32px;
+      }
+
+      header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 12px 0;
+
+        align-items: center;
+      }
+
+      header > .right-menu {
+        display: flex;
+
+        align-items: center;
+        gap: 12px;
+      }
+
+      header > .right-menu > .login {
+        padding: 8px 24px;
+        color: black;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+
+      header > .right-menu > .user {
+        aspect-ratio: 1 / 1;
+        height: 100%;
+        border-radius: 50%;
+      }
+
+      .logo {
+        color: white;
+        font-size: 42px;
+        font-weight: 600;
+        border-radius: 12px;
+      }
+
+      input.search {
+        width: calc(1200px - 72px);
+        max-width: 1200px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        border-radius: 12px;
+        padding: 12px 36px;
+        outline: none;
+      }
+
+      main {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+      }
+
+      aside {
+        min-width: 350px;
+        max-width: 350px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      div.side-banner {
+        width: 100%;
+        height: 700px;
+        border-radius: 14px;
+        background-color: #f0f0f0;
+        display: block;
+      }
+
+      div.center {
+        width: 1200px;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+      }
+
+      .banner {
+        width: 100%;
+        height: 600px;
+        border-radius: 30px;
+        background-color: #f0f0f0;
+      }
+
+      .banner + section {
+        margin-bottom: 24px;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .section_title {
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .movie_list {
+        width: 100%;
+        display: flex;
+        padding: 0;
+        margin: 0;
+      }
+
+      .movie_item {
+        max-width: 300px !important;
+        height: 200px;
+        display: flex;
+        background-color: #f0f0f0;
+        border-radius: 30px;
+        overflow: hidden;
+      }
+
+      .movie_recommand_item {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        background-color: #f0f0f0;
+        border-radius: 30px;
+        overflow: hidden;
+      }
+
+      .kind_wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+      }
+
+      .kind_item {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .kind_item > span {
+        color: white;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .kind_item > div button {
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+      }
+
+      footer {
+        height: 600px;
+        background: url(footer.png) no-repeat;
+      }
+
+      .search_wrapper {
+        width: 1200px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: flex;
+        align-items: center;
+      }
+
+      .search_icon {
+        position: absolute;
+        right: 8px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+      }
+
+      .kind-sec {
+        background: #2d2d2d;
+        padding: 12px;
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="./logo.png" width="300" />
+      <div class="search_wrapper">
+        <input class="search" placeholder="검색" />
+        <img width="28" height="28" src="search.png" class="search_icon" />
+      </div>
+
+      <div class="right-menu">
+        <div class="login"><img src="login.png" width="90" /></div>
+        <div class="user"><img src="info.png" width="36" /></div>
+      </div>
+    </header>
+    <main>
+      <aside>
+        <section class="movie_list swiper swiper-ls-1">
+          <span class="section_title">영화관 추천</span>
+          <ul class="movie_list swiper-wrapper">
+            <li class="movie_recommand_item swiper-slide">
+              <img src="2.png" />
+            </li>
+            <li class="movie_recommand_item swiper-slide">
+              <img src="2.png" />
+            </li>
+            <li class="movie_recommand_item swiper-slide">
+              <img src="2.png" />
+            </li>
+          </ul>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev ls-1-p"></div>
+          <div class="swiper-button-next ls-1-n"></div>
+
+          <div class="swiper-pagination ls-1-pa"></div>
+        </section>
+        <section style="kind-sec">
+          <span class="section_title">직원 친절도</span>
+          <div class="swiper swiper-ls-2">
+            <div class="swiper-wrapper">
+              <ul class="kind_wrapper swiper-slide">
+                <li class="kind_item">
+                  <span>영화관 1</span>
+                  <div>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                  </div>
+                </li>
+                <li class="kind_item">
+                  <span>영화관 2</span>
+                  <div>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                  </div>
+                </li>
+                <li class="kind_item">
+                  <span>영화관 3</span>
+                  <div>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                  </div>
+                </li>
+                <li class="kind_item">
+                  <span>영화관 4</span>
+                  <div>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                  </div>
+                </li>
+                <li class="kind_item">
+                  <span>영화관 5</span>
+                  <div>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                  </div>
+                </li>
+              </ul>
+              <ul class="kind_wrapper swiper-slide">
+                <li class="kind_item">
+                  <span>영화관 1</span>
+                  <div>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                  </div>
+                </li>
+                <li class="kind_item">
+                  <span>영화관 2</span>
+                  <div>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                  </div>
+                </li>
+                <li class="kind_item">
+                  <span>영화관 3</span>
+                  <div>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                  </div>
+                </li>
+                <li class="kind_item">
+                  <span>영화관 4</span>
+                  <div>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                  </div>
+                </li>
+                <li class="kind_item">
+                  <span>영화관 5</span>
+                  <div>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                  </div>
+                </li>
+              </ul>
+              <ul class="kind_wrapper swiper-slide">
+                <li class="kind_item">
+                  <span>영화관 1</span>
+                  <div>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                  </div>
+                </li>
+                <li class="kind_item">
+                  <span>영화관 2</span>
+                  <div>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                  </div>
+                </li>
+                <li class="kind_item">
+                  <span>영화관 3</span>
+                  <div>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                  </div>
+                </li>
+                <li class="kind_item">
+                  <span>영화관 4</span>
+                  <div>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                  </div>
+                </li>
+                <li class="kind_item">
+                  <span>영화관 5</span>
+                  <div>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                    <button>😀</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="movie_list swiper swiper-ls-3">
+          <span class="section_title">메뉴 추천</span>
+          <ul class="movie_list swiper-wrapper">
+            <li class="movie_recommand_item swiper-slide">
+              <img src="3.png" width="100%" />
+            </li>
+            <li class="movie_recommand_item swiper-slide">
+              <img src="3.png" width="100%" />
+            </li>
+            <li class="movie_recommand_item swiper-slide">
+              <img src="3.png" width="100%" />
+            </li>
+          </ul>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev ls-3-p"></div>
+          <div class="swiper-button-next ls-3-n"></div>
+
+          <div class="swiper-pagination ls-3-pa"></div>
+        </section>
+      </aside>
+      <div class="center">
+        <div class="swiper swiper-center">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="5.png"
+                width="100%"
+                height="100%"
+                style="object-fit: cover"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="5.png"
+                width="100%"
+                height="100%"
+                style="object-fit: cover"
+              />
+            </div>
+          </div>
+          <div class="swiper-button-prev center-p"></div>
+          <div class="swiper-button-next center-n"></div>
+        </div>
+
+        <section class="movie_list swiper main-1">
+          <span class="section_title">User 맞춤 영상</span>
+          <ul class="movie_list swiper-wrapper">
+            <li class="movie_item swiper-slide">
+              <img
+                src="3.png"
+                width="100%"
+                height="100%"
+                style="object-fit: cover"
+              />
+            </li>
+            <li class="movie_item swiper-slide">
+              <img
+                src="3.png"
+                width="100%"
+                height="100%"
+                style="object-fit: cover"
+              />
+            </li>
+            <li class="movie_item swiper-slide">
+              <img
+                src="3.png"
+                width="100%"
+                height="100%"
+                style="object-fit: cover"
+              />
+            </li>
+            <li class="movie_item swiper-slide">
+              <img
+                src="3.png"
+                width="100%"
+                height="100%"
+                style="object-fit: cover"
+              />
+            </li>
+            <li class="movie_item swiper-slide">
+              <img
+                src="3.png"
+                width="100%"
+                height="100%"
+                style="object-fit: cover"
+              />
+            </li>
+            <li class="movie_item swiper-slide">
+              <img
+                src="3.png"
+                width="100%"
+                height="100%"
+                style="object-fit: cover"
+              />
+            </li>
+            <li class="movie_item swiper-slide">
+              <img
+                src="3.png"
+                width="100%"
+                height="100%"
+                style="object-fit: cover"
+              />
+            </li>
+          </ul>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev main-1-p"></div>
+          <div class="swiper-button-next main-1-n"></div>
+        </section>
+        <section class="movie_list swiper main-2">
+          <span class="section_title">최신순</span>
+          <ul class="movie_list swiper-wrapper">
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+          </ul>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev main-2-p"></div>
+          <div class="swiper-button-next main-2-n"></div>
+        </section>
+        <section class="movie_list swiper main-3">
+          <span class="section_title">인기순</span>
+          <ul class="movie_list swiper-wrapper">
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+          </ul>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev main-3-p"></div>
+          <div class="swiper-button-next main-3-n"></div>
+        </section>
+        <section class="movie_list swiper main-4">
+          <span class="section_title">액션</span>
+          <ul class="movie_list swiper-wrapper">
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+          </ul>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev main-4-p"></div>
+          <div class="swiper-button-next main-4-n"></div>
+        </section>
+        <section class="movie_list swiper main-5">
+          <span class="section_title">범죄</span>
+          <ul class="movie_list swiper-wrapper">
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+          </ul>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev main-5-p"></div>
+          <div class="swiper-button-next main-5-n"></div>
+        </section>
+        <section class="movie_list swiper main-6">
+          <span class="section_title">SF</span>
+          <ul class="movie_list swiper-wrapper">
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+          </ul>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev main-6-p"></div>
+          <div class="swiper-button-next main-6-n"></div>
+        </section>
+        <section class="movie_list swiper main-7">
+          <span class="section_title">코미디</span>
+          <ul class="movie_list swiper-wrapper">
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+          </ul>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev main-7-p"></div>
+          <div class="swiper-button-next main-7-n"></div>
+        </section>
+        <section class="movie_list swiper main-8">
+          <span class="section_title">로멘스</span>
+          <ul class="movie_list swiper-wrapper">
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+          </ul>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev main-8-p"></div>
+          <div class="swiper-button-next main-8-n"></div>
+        </section>
+        <section class="movie_list swiper main-9">
+          <span class="section_title">애니메이션</span>
+          <ul class="movie_list swiper-wrapper">
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+            <li class="movie_item swiper-slide"></li>
+          </ul>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev main-9-p"></div>
+          <div class="swiper-button-next main-9-n"></div>
+        </section>
+      </div>
+      <aside>
+        <div class="side-banner">
+          <img src="4.png" width="100%" />
+        </div>
+      </aside>
+    </main>
+    <footer></footer>
+  </body>
+  <script>
+    new Swiper(".main-1", {
+      slidesPerView: "auto",
+      spaceBetween: 24,
+      loop: true,
+      loopedSlidesLimit: false,
+      slideToClickedSlide: true,
+      loopedSlides: 1,
+      navigation: {
+        nextEl: ".main-1-n", // 다음 버튼 클래스명
+        prevEl: ".main-1-p", // 이번 버튼 클래스명
+      },
+    });
+    new Swiper(".main-2", {
+      slidesPerView: "auto",
+      spaceBetween: 24,
+      loop: true,
+      loopedSlidesLimit: false,
+      slideToClickedSlide: true,
+      loopedSlides: 1,
+      navigation: {
+        nextEl: ".main-2-n", // 다음 버튼 클래스명
+        prevEl: ".main-2-p", // 이번 버튼 클래스명
+      },
+    });
+    new Swiper(".main-3", {
+      slidesPerView: "auto",
+      spaceBetween: 24,
+      loop: true,
+      loopedSlidesLimit: false,
+      slideToClickedSlide: true,
+      loopedSlides: 1,
+      navigation: {
+        nextEl: ".main-3-n", // 다음 버튼 클래스명
+        prevEl: ".main-3-p", // 이번 버튼 클래스명
+      },
+    });
+    new Swiper(".main-4", {
+      slidesPerView: "auto",
+      spaceBetween: 24,
+      loop: true,
+      loopedSlidesLimit: false,
+      slideToClickedSlide: true,
+      loopedSlides: 1,
+      navigation: {
+        nextEl: ".main-4-n", // 다음 버튼 클래스명
+        prevEl: ".main-4-p", // 이번 버튼 클래스명
+      },
+    });
+    new Swiper(".main-5", {
+      slidesPerView: "auto",
+      spaceBetween: 24,
+      loop: true,
+      loopedSlidesLimit: false,
+      slideToClickedSlide: true,
+      loopedSlides: 1,
+      navigation: {
+        nextEl: ".main-5-n", // 다음 버튼 클래스명
+        prevEl: ".main-5-p", // 이번 버튼 클래스명
+      },
+    });
+    new Swiper(".main-6", {
+      slidesPerView: "auto",
+      spaceBetween: 24,
+      loop: true,
+      loopedSlidesLimit: false,
+      slideToClickedSlide: true,
+      loopedSlides: 1,
+      navigation: {
+        nextEl: ".main-6-n", // 다음 버튼 클래스명
+        prevEl: ".main-6-p", // 이번 버튼 클래스명
+      },
+    });
+    new Swiper(".main-7", {
+      slidesPerView: "auto",
+      spaceBetween: 24,
+      loop: true,
+      loopedSlidesLimit: false,
+      slideToClickedSlide: true,
+      loopedSlides: 1,
+      navigation: {
+        nextEl: ".main-7-n", // 다음 버튼 클래스명
+        prevEl: ".main-7-p", // 이번 버튼 클래스명
+      },
+    });
+    new Swiper(".main-8", {
+      slidesPerView: "auto",
+      spaceBetween: 24,
+      loop: true,
+      loopedSlidesLimit: false,
+      slideToClickedSlide: true,
+      loopedSlides: 1,
+      navigation: {
+        nextEl: ".main-8-n", // 다음 버튼 클래스명
+        prevEl: ".main-8-p", // 이번 버튼 클래스명
+      },
+    });
+    new Swiper(".main-9", {
+      slidesPerView: "auto",
+      spaceBetween: 24,
+      loop: true,
+      loopedSlidesLimit: false,
+      slideToClickedSlide: true,
+      loopedSlides: 1,
+      navigation: {
+        nextEl: ".main-9-n", // 다음 버튼 클래스명
+        prevEl: ".main-9-p", // 이번 버튼 클래스명
+      },
+    });
+
+    new Swiper(".swiper-ls-1", {
+      slidesPerView: "auto",
+      spaceBetween: 24,
+      loop: true,
+      navigation: {
+        nextEl: ".ls-1-n", // 다음 버튼 클래스명
+        prevEl: ".ls-1-p", // 이번 버튼 클래스명
+      },
+      pagination: {
+        el: ".ls-1-pa",
+        type: "bullets",
+      },
+    });
+
+    new Swiper(".swiper-ls-2", {
+      slidesPerView: "auto",
+      spaceBetween: 24,
+      loop: true,
+      // navigation: {
+      //   nextEl: ".ls-2-n", // 다음 버튼 클래스명
+      //   prevEl: ".ls-2-p", // 이번 버튼 클래스명
+      // },
+    });
+
+    new Swiper(".swiper-ls-3", {
+      slidesPerView: "auto",
+      spaceBetween: 24,
+      loop: true,
+      navigation: {
+        nextEl: ".ls-3-n", // 다음 버튼 클래스명
+        prevEl: ".ls-3-p", // 이번 버튼 클래스명
+      },
+      pagination: {
+        el: ".ls-3-pa",
+        type: "bullets",
+      },
+    });
+
+    new Swiper(".swiper-center", {
+      slidesPerView: "auto",
+      spaceBetween: 24,
+      loop: true,
+      navigation: {
+        nextEl: ".center-n", // 다음 버튼 클래스명
+        prevEl: ".center-p", // 이번 버튼 클래스명
+      },
+    });
+
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+    const userSlides = document.querySelectorAll('.main-1 .swiper-slide');
+
+    userSlides.forEach(slide => {
+        slide.addEventListener('mouseenter', function() {
+            const bookingLink = document.createElement('a');
+            bookingLink.href = '예매 링크'; // 예매 페이지 링크를 넣어주세요
+            bookingLink.target = '_blank';
+            bookingLink.textContent = '예매하러 가기';
+            bookingLink.classList.add('booking-link');
+
+            slide.appendChild(bookingLink);
+        });
+
+        slide.addEventListener('mouseleave', function() {
+            const bookingLink = slide.querySelector('.booking-link');
+            if (bookingLink) {
+                bookingLink.remove();
+            }
+        });
+    });
+});
+  </script>
+</html>
