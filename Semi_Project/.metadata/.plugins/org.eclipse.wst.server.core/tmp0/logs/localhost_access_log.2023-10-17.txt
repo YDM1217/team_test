@@ -1,0 +1,9 @@
+127.0.0.1 - - [17/Oct/2023:12:34:48 +0900] "GET / HTTP/1.1" 200 7006
+0:0:0:0:0:0:0:1 - - [17/Oct/2023:12:34:49 +0900] "GET / HTTP/1.1" 200 7006
+0:0:0:0:0:0:0:1 - - [17/Oct/2023:12:34:49 +0900] "GET /resources/css/cinema/cinema-homepage.css HTTP/1.1" 200 9799
+0:0:0:0:0:0:0:1 - - [17/Oct/2023:12:34:49 +0900] "GET /resources/js/cinema/cinema-homepage.js HTTP/1.1" 200 10824
+0:0:0:0:0:0:0:1 - - [17/Oct/2023:12:34:49 +0900] "GET /resources/images/cinema/44014266-%EC%98%81%ED%99%94-%EC%8A%AC%EB%A0%88%EC%9D%B4%ED%8A%B8.jpg HTTP/1.1" 200 118905
+0:0:0:0:0:0:0:1 - - [17/Oct/2023:12:34:49 +0900] "GET /resources/images/cinema/%ED%8A%B9%EB%B3%84%EA%B4%80.jpg HTTP/1.1" 200 103120
+0:0:0:0:0:0:0:1 - - [17/Oct/2023:12:34:49 +0900] "GET /resources/images/cinema/%EC%8B%9C%EC%82%AC%ED%9A%8Cimg.jpg HTTP/1.1" 200 45127
+0:0:0:0:0:0:0:1 - - [17/Oct/2023:12:34:49 +0900] "GET /resources/images/cinema/cgv%EC%9A%A9%EC%82%B0.jfif HTTP/1.1" 200 9600
+0:0:0:0:0:0:0:1 - - [17/Oct/2023:12:34:49 +0900] "GET /favicon.ico HTTP/1.1" 404 721

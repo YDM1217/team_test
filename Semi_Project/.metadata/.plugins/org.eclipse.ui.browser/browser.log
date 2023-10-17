@@ -1,0 +1,4 @@
+
+10월 17, 2023 13:21:23.995 NEW SESSION
+10월 17, 2023 13:21:23.995 [13296:5360:1017/132123.993:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+10월 17, 2023 13:51:23.948 [13296:5360:1017/135123.947:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
