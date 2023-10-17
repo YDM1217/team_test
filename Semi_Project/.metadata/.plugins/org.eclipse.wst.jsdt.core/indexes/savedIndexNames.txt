@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\user1\Desktop\movieInsightSTS\team_test\Semi_Project\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3591269550.index
+1899219369.index
+3605814998.index
+3370353048.index
+877075970.index
+4192600476.index
