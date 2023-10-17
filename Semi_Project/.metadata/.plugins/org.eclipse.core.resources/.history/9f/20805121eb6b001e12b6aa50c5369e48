@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+
+	<!-- SqlSessionTemplate 관련 설정 -->
+	<settings>
+		<setting name="jdbcTypeForNull" value="NULL"/>
+		<!-- insert, update 사용 시 null 값이 있는 경우 값에 NULL을 대입하게 해 줌 -->
+	</settings>
+
+	<!-- 별칭 작성 부분 -->
+	<!--  VO/DTO 클래스의 패키지명 + 클래스명 작성하는게 불편하여 짧은 별칭 부여 -->
+	<typeAliases>
+		<typeAlias type="edu.kh.project.member.model.dto.Member" alias="Member"/>	
+		<!-- type 위치에 있는 클래스 이름을 alias= " " 라고 부르겠다. -->
+	</typeAliases>
+
+
+	<!-- mapper 파일(SQL 작성파일) 위치를 등록, xml 파일 만들면 여기서 등록해야됨-->
+	<mappers>
+		<mapper resource="/mappers/member-mapper.xml"/>
+		<mapper resource="/mappers/ajax-mapper.xml"/>
+		<mapper resource="/mappers/email-mapper.xml"/>
+		<mapper resource="/mappers/board-mapper.xml"/>
+	</mappers>
+
+</configuration>
