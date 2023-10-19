@@ -521,6 +521,17 @@ main>section{
 
 }
 
+#facilityForm input{
+	
+	height:100%;
+	width: 85%;
+	border: none;
+	font-size: 1rem;
+	margin-left: 10%;
+	
+	
+}
+
 .block_name{
     /* 제목 */
     font-size: 3rem;
